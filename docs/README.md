@@ -2,80 +2,86 @@
 pageClass: home-page
 # some data for the components
 
-name: Harry Potter
+name: YoferChen
 profile: /profile.jpg
 
 socials:
+  - title: gitee
+    icon: "/icons/gitee.svg"
+    link: https://gitee.com/yoferchen
   - title: github
     icon: "/icons/github.svg"
-    link: https://github.com/mtobeiyf
-  - title: linkedin
-    icon: "/icons/linkedin-mono.svg"
-    link: https://www.linkedin.com
-  - title: instagram
-    icon: "/icons/instagram-mono.svg"
-    link: https://www.instagram.com
+    link: https://github.com/YoferChen
+  - title: csdn
+    icon: "/icons/csdn.svg"
+    link: https://blog.csdn.net/weixin_44002829
+  - title: bilibili
+    icon: "/icons/bilibili.svg"
+    link: https://space.bilibili.com/385581781
 
-cv: https://en.wikipedia.org/wiki/Harry_Potter
-bio: Student at Hogwarts School
-email: harry (at) hogwarts (dot) edu
+blog: https://blog.csdn.net/weixin_44002829
+bio: Students majoring in computer science and technology
+email: 1732562137@qq.com
 ---
 
 <ProfileSection :frontmatter="$page.frontmatter" />
 
 ## About Me
 
-I attended [Hogwarts School of Witchcraft and Wizardry](https://en.wikipedia.org/wiki/Hogwarts) to study witchcraft, supervised by **Dumbledore** and other professors. 
+I graduated from Guangzhou University with an undergraduate degree . And I am currently studying graduate students in Beijing University of Science and Technology. Computer science is my interest. I am studying and focusing on Artificial Intelligence, Computer Vision, PYQT and Web Development. It is my ideal to explore how to apply technology to daily life.
 
-I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fear. My research area includes Defence Against the Dark Arts and other magic. :dizzy:
-
+**Summary:** One programmer, loves life, loves technology, and strives to explore a  wider world.
 
 ## News
 
-- [Sept 1991] Attended Hogwarts
-- [July 1980] Born in Godric's Hollow, West Country, England, Great Britain
+- [July 2022] Graduated from Guangzhou University
+- [Nov 1999] Born in Shantou, Guangdong Province, China
 
 
-## Education & Experiences
+## Education
 
-- **Hogwarts School of Witchcraft and Wizardry** <br/>
-Sept 1991 - 1997
+- **University of Science and Technology Beijing** <br/>
+Sept 2022.09 - ~
 
+- **Guangzhou University** <br/>
+Sept 2018.09 - 2022.07
+## Experiences
+[→ Full list](/experiences/)
 
-## Projects
+<ExperienceCard image="/experiences/GZHU.jpg">
 
-
-[→ Full list](/projects/)
-
-<ProjectCard image="/projects/1.png" hideBorder=true>
-
-  **The Making of Harry Potter's Wand**
-
-  Harry P., Hermione G., *et al*
+  2018.09 - 2022.07
   
-  Harry's wand was broken in 1997, but was repaired by him after the 1998 Battle of Hogwarts. Usually the repair of a wand is impossible, but with the use of the Elder Wand it was achievable.
+  **Grangzhou University**
   
-  [[PDF](https://www.google.com)] [[arXiv](https://arxiv.org)]
-
-</ProjectCard>
-
-<ProjectCard hideBorder=true>
-
-  **Harry Potter and the Deathly Hallows**
+  广州大学（Guangzhou University），简称广大（GU）  ，位于广东省广州市，是经教育部批准成立的综合性大学，实行省市共建、以市为主的办学体制，是广东省高水平大学重点建设高校、国家“111计划”建设高校、广东省双一流重点建设高校、广州市高水平大学建设高校。
   
-  In the epilogue of Deathly Hallows, which is set 19 years after Voldemort's death, Harry and Ginny are a couple and have three children: James Sirius Potter, who has already been at Hogwarts for at least one year, Albus Severus Potter, who is starting his first year there, and Lily Luna Potter, who is two years away from her first year at the school.
+  [[GZHU](http://www.gzhu.edu.cn/)] [[SC](https://jsj.gzhu.edu.cn/)]
 
-  [[Link](https://www.google.com)]
+</ExperienceCard>
 
-</ProjectCard>
+<ExperienceCard image="/experiences/USTB.png">
+
+  2022.09 - ~
+
+  **Beijing University of Science and Technology**
+  
+  北京科技大学（University of Science and Technology Beijing），简称北科大，位于北京市，是中华人民共和国教育部直属的全国重点大学，是“双一流”建设高校、国家“211工程”和“985工程优势学科创新平台”建设高校、教育部首批“三全育人”综合改革试点高校、首批北京市深化创新创业教育改革示范高校，入选卓越工程师教育培养计划、高等学校学科创新引智计划、高等学校创新能力提升计划、国家大学生创新性实验计划、国家建设高水平大学公派研究生项目、新工科研究与实践项目、教育部来华留学示范基地、中国政府奖学金来华留学生接收院校，是北京高科大学联盟、中欧工程教育平台、中俄工科大学联盟、CDIO工程教育联盟成员单位和中国人工智能教育联席会理事单位
+
+  [[USTB](https://www.ustb.edu.cn/)] [[SC](http://scce.ustb.edu.cn/)] [[SD](https://sd.ustb.edu.cn/)] 
+
+</ExperienceCard>
 
 
 ## Awards & Honors
+- XXX
+- XXX
 
 ### Contests
+- XXX
 
-- First place in **The Hogwarts House Cup**
-
+## Notice
+This website conducts secondary development based on [vuepress-homepage](https://github.com/imfing/vuepress-homepage)
 
 <!-- Custom style for this page -->
 

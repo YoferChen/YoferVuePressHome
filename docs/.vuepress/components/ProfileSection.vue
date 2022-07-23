@@ -21,9 +21,9 @@
       <div class="contact">
         <div class="email" title="Contact me">{{ data.email }}</div>
       </div>
-      <div v-if="data.cv">
-        <a target="_blank" :href="data.cv" title="Download my CV in PDF">
-          <font size="2em" color=""><b>[CV]</b></font>
+      <div v-if="data.blog">
+        <a target="_blank" :href="data.blog" title="Download my CV in PDF">
+          <font size="2em" color=""><b>[Blog]</b></font>
         </a>
       </div>
     </div>
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  props: ['image', 'cv', 'frontmatter'],
+  props: ['image', 'blog', 'frontmatter'],
 
   computed: {
     data() {

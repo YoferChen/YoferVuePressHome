@@ -6,7 +6,7 @@
   "repository": "https://github.com/mtobeiyf/vuepress-homepage.git",
   "scripts": {
     "clean": "rimraf dist/*",
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --port=3000",
     "build": "vuepress build docs"
   },
   "license": "MIT",

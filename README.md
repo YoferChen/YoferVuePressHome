@@ -93,6 +93,6 @@ It's **responsive** and **mobile friendly**.
 
 ## License
 
-Copyright © 2020, Fing
+Copyright © 2022, YoferChen
 
 Released under the [MIT License](https://opensource.org/licenses/MIT).
