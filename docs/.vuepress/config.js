@@ -2,8 +2,8 @@ module.exports = {
   title: "Yofer\'s Home",
   description: "This is a vuepress website of YoferChen",
   head: [["link", { rel: "icon", href: `/favicon.ico` }]],
-  base: "/",
-  dest: "./dist",
+  base: "/YoferVuePressHome/",
+  dest: "./website",
 
   themeConfig: {
     search: false,

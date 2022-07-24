@@ -3,7 +3,7 @@
     <img src="https://user-images.githubusercontent.com/5097752/39163721-4c79012c-47ae-11e8-842b-2af72f69cc2c.jpg" width="300px" alt="">
   </a>
   <br />
-  Your Awesome Homepage
+  Yofer's Home power by VuePress
 </h1>
 
 <p align="center">
@@ -15,23 +15,12 @@
   <img src="https://img.shields.io/badge/PR-welcome-brightgreen.svg" alt="">
 </p>
 
-<h2>
-  <a href="https://vuepress-homepage.netlify.com" target="_blank" title="Demo">
-    Live Demo
-  </a>
-</h2>
+## The project is based on [vuepress-homepage](https://github.com/imfing/vuepress-homepage)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mtobeiyf/vuepress-homepage)
+## [Live Demo](https://vuepress-homepage.netlify.com)
 
-Screenshots:
+Click the title to enter the live website.
 
-| Home/Resume :newspaper: | Projects/Publications :books: |
-| :---: | :---: |
-| <img src="https://user-images.githubusercontent.com/5097752/71707796-8b275880-2dba-11ea-8db0-03172722c35d.png"/> | <img src="https://user-images.githubusercontent.com/5097752/71707797-8b275880-2dba-11ea-8239-c51f4bac6542.png"/> |
-
-| About Me :raising_hand: | Docs/Articles :closed_book: |
-| :---: | :---: |
-| <img src="https://user-images.githubusercontent.com/5097752/71707795-8b275880-2dba-11ea-9440-987d542c560c.png"/> | <img src="https://user-images.githubusercontent.com/5097752/71707798-8b275880-2dba-11ea-9777-d9d64ac4ad45.png"/> |
 
 <h2>
   <a href="https://vuepress-homepage.netlify.com/guide/" target="_blank" title="Getting Started">
@@ -45,23 +34,32 @@ Make sure you have [Node.js](https://nodejs.org) and [yarn](https://yarnpkg.com)
 
 ```bash
 # Clone the repo
-git clone https://github.com/mtobeiyf/vuepress-homepage.git
+git clone https://github.com/YoferChen/YoferVuePressHome.git
 cd vuepress-homepage
 
 # Install VuePress
 yarn global add vuepress
-# OR npm install -g vuepress
 
 # Install dependencies
 yarn
-# OR npm install
 
 # Run
 $ yarn dev
-# OR npm run dev
 ```
 
 Check your site at `http://127.0.0.1:8080/`
+
+<br/>
+
+## Screenshots:
+
+| Home/Resume :newspaper: | Projects/Publications :books: |
+| :---: | :---: |
+| <img src="https://user-images.githubusercontent.com/5097752/71707796-8b275880-2dba-11ea-8db0-03172722c35d.png"/> | <img src="https://user-images.githubusercontent.com/5097752/71707797-8b275880-2dba-11ea-8239-c51f4bac6542.png"/> |
+
+| About Me :raising_hand: | Docs/Articles :closed_book: |
+| :---: | :---: |
+| <img src="https://user-images.githubusercontent.com/5097752/71707795-8b275880-2dba-11ea-9440-987d542c560c.png"/> | <img src="https://user-images.githubusercontent.com/5097752/71707798-8b275880-2dba-11ea-9777-d9d64ac4ad45.png"/> |
 
 ## Features
 
