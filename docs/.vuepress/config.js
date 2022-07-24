@@ -4,7 +4,7 @@ module.exports = {
   // base: "/yofervuepresshome/",
   base: "/YoferVuePressHome/",
   head: [["link", { rel: "icon", href: `/favicon.ico` }]],
-  // dest: "./website",
+  dest: "./dist",
 
   themeConfig: {
     search: false,

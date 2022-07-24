@@ -49,6 +49,18 @@ $ yarn dev
 
 Check your site at `http://127.0.0.1:8080/`
 
+## Deploy
+```bash
+yarn build
+
+cd dist
+git init
+git add .
+git commit -m deploy
+# Upload the dist to branch of blog-pages
+git push -f git@github.com:YoferChen/YoferVuePressHome.git master:blog-pages
+```
+
 <br/>
 
 ## Screenshots:
