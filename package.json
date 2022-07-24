@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Generate your homepage with VuePress",
   "author": "Fing <mtobeiyf@163.com>",
-  "repository": "https://github.com/mtobeiyf/vuepress-homepage.git",
+  "repository": "https://github.com/YoferChen/YoferVuePressHome.git",
   "scripts": {
     "clean": "rimraf dist/*",
     "dev": "vuepress dev docs --port=3000",

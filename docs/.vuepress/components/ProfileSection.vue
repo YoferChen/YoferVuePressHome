@@ -13,7 +13,7 @@
       <div class="socials">
         <div v-for="item in data.socials">
             <a :href="item.link" target="_blank">
-              <img :src="item.icon" :alt="item.title"
+              <img :src="$withBase(item.icon)" :alt="item.title"
               :title="item.title" />
             </a>
         </div>
