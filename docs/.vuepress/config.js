@@ -1,9 +1,10 @@
 module.exports = {
   title: "Yofer\'s Home",
   description: "This is a vuepress website of YoferChen",
-  base: "/yofervuepresshome/",
+  // base: "/yofervuepresshome/",
+  base: "/YoferVuePressHome/",
   head: [["link", { rel: "icon", href: `/favicon.ico` }]],
-  dest: "./website",
+  // dest: "./website",
 
   themeConfig: {
     search: false,
