@@ -114,7 +114,7 @@ QSS中的级联包含几个方面的概念：
 
 ### QSpinBox
 
-![image-20220502130217987](/styles/image-20220502130217987.png)
+![image-20220502130217987](/YoferVuePressHome/styles/image-20220502130217987.png)
 
 ```c++
 QSpinBox{
@@ -202,7 +202,7 @@ QSpinBox::down-button:pressed{
   >
   > 为避免任意一个按钮都同时可以切换状态，按钮选中后设为不可选状态
   
-  ![image-20220427005442315](/styles/image-20220427005442315.png)
+  ![image-20220427005442315](/YoferVuePressHome/styles/image-20220427005442315.png)
 
 ```c++
 ##widgetTab QPushButton[checked='false']{
@@ -290,7 +290,7 @@ class WidgetWindow(QWidget):
 
 ### QCheckBox
 
-![image-20220415200857610](/styles/image-20220415200857610.png)
+![image-20220415200857610](/YoferVuePressHome/styles/image-20220415200857610.png)
 
 ```c++
 /*复选框*/
@@ -323,7 +323,7 @@ QCheckBox::indicator:unchecked{
 
 ### QRadioBox
 
-![image-20220427203911338](/styles/image-20220427203911338.png)
+![image-20220427203911338](/YoferVuePressHome/styles/image-20220427203911338.png)
 
 ```c++
 QRadioButton{
@@ -342,7 +342,7 @@ QRadioButton::indicator:unchecked{
 
 ### QComboBox
 
-![image-20220415200731441](/styles/image-20220415200731441.png)
+![image-20220415200731441](/YoferVuePressHome/styles/image-20220415200731441.png)
 
 > 注：要是列表项样式生效，需要设置`self.ui.comboBox.setView(QListView())`
 
@@ -394,7 +394,7 @@ QComboBox QAbstractItemView::item:selected{
 
 ### QSlider
 
-![image-20220415200635971](/styles/image-20220415200635971.png)
+![image-20220415200635971](/YoferVuePressHome/styles/image-20220415200635971.png)
 
 ```c++
 /*整体尺寸*/
@@ -470,11 +470,11 @@ border-radius: 4px;
 
 - 子组件
 
-![image-20220415223707967](/styles/image-20220415223707967.png)
+![image-20220415223707967](/YoferVuePressHome/styles/image-20220415223707967.png)
 
 - 竖向滚动条
 
-  ![image-20220505124634451](/styles/image-20220505124634451.png)
+  ![image-20220505124634451](/YoferVuePressHome/styles/image-20220505124634451.png)
 
 ```c++
 /*竖向滚动条*/
@@ -673,7 +673,7 @@ QTableWidget::item::selected      /* 每个单元格被选中状态*/
 
 - 模板
 
-  ![image-20220425112217480](/styles/image-20220425112217480.png)
+  ![image-20220425112217480](/YoferVuePressHome/styles/image-20220425112217480.png)
 
   > 包含：水平、竖直滚动条、表格、表头、复选框样式
   >
@@ -1033,7 +1033,7 @@ padding-left:12px;
 
 - 模板
 
-  ![image-20220427181830801](/styles/image-20220427181830801.png)
+  ![image-20220427181830801](/YoferVuePressHome/styles/image-20220427181830801.png)
 
   ```c++
               QListWidget{
@@ -1095,7 +1095,7 @@ QPlainTextEdit{
 
   > 右侧QTableWidget的QTabBar使用时设置为隐藏即可，通过左侧按钮控制Tab的切换
 
-  ![image-20220427200525010](/styles/image-20220427200525010.png)
+  ![image-20220427200525010](/YoferVuePressHome/styles/image-20220427200525010.png)
 
 - UI布局代码：
 
