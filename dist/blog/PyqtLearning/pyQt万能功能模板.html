@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PyQt5万能功能模板 | Yofer&#39;s Home</title>
+    <meta name="description" content="This is a vuepress website of YoferChen">
+    <link rel="icon" href="/YoferVuePressHome/favicon.ico">
+    
+    <link rel="preload" href="/YoferVuePressHome/assets/css/0.styles.ebfc7a22.css" as="style"><link rel="preload" href="/YoferVuePressHome/assets/js/app.9c25632e.js" as="script"><link rel="preload" href="/YoferVuePressHome/assets/js/2.22e95c4d.js" as="script"><link rel="preload" href="/YoferVuePressHome/assets/js/19.5f472fc1.js" as="script"><link rel="prefetch" href="/YoferVuePressHome/assets/js/10.6962b2ef.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/11.cbbf75ee.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/12.809ffaee.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/13.29f48af5.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/14.ea7007cd.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/15.d00174e7.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/16.80776e36.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/17.364f01fc.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/18.510f7ec4.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/20.93f40cf0.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/21.70ea084e.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/22.a4675293.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/23.99861fe2.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/24.e2e055bc.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/25.c78741f3.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/26.258ded5e.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/27.8be1f1b4.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/28.7ed628f6.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/29.4073dadc.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/3.8ec5536d.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/30.6376b2b6.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/31.7378aec7.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/4.7e03f790.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/5.21f30200.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/6.313257a4.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/7.0ab29d2c.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/8.0eb6a933.js"><link rel="prefetch" href="/YoferVuePressHome/assets/js/9.4c45b185.js">
+    <link rel="stylesheet" href="/YoferVuePressHome/assets/css/0.styles.ebfc7a22.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/YoferVuePressHome/" class="home-link router-link-active"><!----> <span class="site-name">Yofer's Home</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/YoferVuePressHome/" class="nav-link">Home</a></div><div class="nav-item"><a href="/YoferVuePressHome/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/YoferVuePressHome/experiences/" class="nav-link">Experiences</a></div><div class="nav-item"><a href="/YoferVuePressHome/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/YoferVuePressHome/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://github.com/YoferChen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/YoferVuePressHome/" class="nav-link">Home</a></div><div class="nav-item"><a href="/YoferVuePressHome/about/" class="nav-link">About</a></div><div class="nav-item"><a href="/YoferVuePressHome/experiences/" class="nav-link">Experiences</a></div><div class="nav-item"><a href="/YoferVuePressHome/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/YoferVuePressHome/guide/" class="nav-link">Guide</a></div><div class="nav-item"><a href="https://github.com/YoferChen" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/YoferVuePressHome/blog/" class="sidebar-heading clickable router-link-active"><span>介绍</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/YoferVuePressHome/blog/SystemMaintenance/" class="sidebar-heading clickable"><span>系统维护手册</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/YoferVuePressHome/blog/PaperNotes/" class="sidebar-heading clickable"><span>论文笔记</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group depth-0"><a href="/YoferVuePressHome/blog/PyqtLearning/" class="sidebar-heading clickable router-link-active open"><span>PyQt5</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/YoferVuePressHome/blog/PyqtLearning/" class="sidebar-link">PyqtLearning</a></li><li><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html" class="active sidebar-link">PyQt5万能功能模板</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#pyqt5万能功能模板" class="sidebar-link">PyQt5万能功能模板</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qwidget与qlayout" class="sidebar-link">QWidget与QLayout</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#父窗口创建子窗口" class="sidebar-link">父窗口创建子窗口</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#从layout中移除控件" class="sidebar-link">从layout中移除控件</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#widget嵌入带布局的子组件" class="sidebar-link">Widget嵌入带布局的子组件</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#设为窗口为模态框" class="sidebar-link">设为窗口为模态框</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qmessagebox" class="sidebar-link">QMessageBox</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#基本使用" class="sidebar-link">基本使用</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#按钮文字自定义" class="sidebar-link">按钮文字自定义</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#定制版：支持中英文、自定义按钮、按钮美化" class="sidebar-link">定制版：支持中英文、自定义按钮、按钮美化</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qlabel" class="sidebar-link">QLabel</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#设置图标" class="sidebar-link">设置图标</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qlistwidget" class="sidebar-link">QListWidget</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#item可拖拽调整顺序、删除、双击弹出二级菜单、右键移动控件" class="sidebar-link">item可拖拽调整顺序、删除、双击弹出二级菜单、右键移动控件</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qcheckbox" class="sidebar-link">QCheckBox</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qfiledialog" class="sidebar-link">QFileDialog</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#文件类型列表设置" class="sidebar-link">文件类型列表设置</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qpushbutton" class="sidebar-link">QPushButton</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#基本事件绑定" class="sidebar-link">基本事件绑定</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#绑定颜色选择器" class="sidebar-link">绑定颜色选择器</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qtablewidget" class="sidebar-link">QTableWidget</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#添加包含控件的行-设置控件居中" class="sidebar-link">添加包含控件的行&amp;设置控件居中</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#单元格按钮绑定删除事件（获取控件所在行列）" class="sidebar-link">单元格按钮绑定删除事件（获取控件所在行列）</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qlistwidget-2" class="sidebar-link">QListWidget</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#自定义qlistwidgetitem" class="sidebar-link">自定义QListWidgetItem</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#其他功能-操作" class="sidebar-link">其他功能&amp;操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#替换qtdesigner创建的控件-保持已绑定的事件处理方法仍然有效" class="sidebar-link">替换QtDesigner创建的控件&amp;保持已绑定的事件处理方法仍然有效</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_1、继承qlabel，增加点击事件（以重写qlabel增加点击事件为例）" class="sidebar-link">1、继承QLabel，增加点击事件（以重写QLabel增加点击事件为例）</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_2、替换控件" class="sidebar-link">2、替换控件</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#设置鼠标手势" class="sidebar-link">设置鼠标手势</a></li></ul></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#qt样式设置" class="sidebar-link">Qt样式设置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_1-通过窗口对象设置样式" class="sidebar-link">1.通过窗口对象设置样式</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_2-使用qss选择器设置控件样式" class="sidebar-link">2.使用QSS选择器设置控件样式</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_3-子控件选择器" class="sidebar-link">3.子控件选择器</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_4-窗口样式" class="sidebar-link">4.窗口样式</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_5-为标签和按钮添加背景图" class="sidebar-link">5.为标签和按钮添加背景图</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_6-缩放图片" class="sidebar-link">6.缩放图片</a></li><li class="sidebar-sub-header"><a href="/YoferVuePressHome/blog/PyqtLearning/pyQt万能功能模板.html#_7-窗口透明效果" class="sidebar-link">7.窗口透明效果</a></li></ul></li></ul></li><li><a href="/YoferVuePressHome/blog/PyqtLearning/QSS万能样式模板.html" class="sidebar-link">QSS万能样式模板</a></li><li><a href="/YoferVuePressHome/blog/PyqtLearning/QT美化之QSS笔记.html" class="sidebar-link">QT美化之QSS笔记</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="pyqt5万能功能模板">PyQt5万能功能模板</h2> <ul><li>Author：浅若清风cyf</li></ul> <h2 id="qwidget与qlayout">QWidget与QLayout</h2> <h3 id="父窗口创建子窗口">父窗口创建子窗口</h3> <blockquote><p>注意将子窗口对象声明为父窗口对象的成员，不能是函数中的局部变量，运行后会崩溃！</p></blockquote> <h3 id="从layout中移除控件">从layout中移除控件</h3> <div class="language-python extra-class"><pre class="language-python"><code>self<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>itemAt<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>widget<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>deleteLater<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="widget嵌入带布局的子组件">Widget嵌入带布局的子组件</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">## 层次关系：widget→layout→widget</span>
+<span class="token comment">## 假设父widget为self.ui.father_widget</span>
+<span class="token comment">##</span>
+self<span class="token punctuation">.</span>lay<span class="token operator">=</span>QVBoxLayout<span class="token punctuation">(</span>self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>father_widget<span class="token punctuation">)</span>
+self<span class="token punctuation">.</span>subWidget<span class="token operator">=</span>QWidget<span class="token punctuation">(</span><span class="token punctuation">)</span>
+self<span class="token punctuation">.</span>lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>self<span class="token punctuation">.</span>subWidget<span class="token punctuation">)</span>
+</code></pre></div><h3 id="设为窗口为模态框">设为窗口为模态框</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> Qt
+
+myWin <span class="token operator">=</span> MainWin<span class="token punctuation">(</span><span class="token punctuation">)</span>
+myWin<span class="token punctuation">.</span>setWindowModality<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>ApplicationModal<span class="token punctuation">)</span>
+</code></pre></div><h2 id="qmessagebox">QMessageBox</h2> <h3 id="基本使用">基本使用</h3> <div class="language-python extra-class"><pre class="language-python"><code>reply <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>information<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">'标题'</span><span class="token punctuation">,</span><span class="token string">'消息对话框正文'</span><span class="token punctuation">,</span>QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span>QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">)</span>
+reply1 <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>question<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">&quot;标题&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;提问框消息正文&quot;</span><span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">)</span>
+reply2 <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>warning<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">&quot;标题&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;警告框消息正文&quot;</span><span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">)</span>
+reply3 <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>critical<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">&quot;标题&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;严重错误对话框消息正文&quot;</span><span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">)</span>
+reply4 <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>about<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">&quot;标题&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;关于对话框消息正文&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="按钮文字自定义">按钮文字自定义</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">showCustomMessageBox</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    save<span class="token punctuation">,</span> discard<span class="token punctuation">,</span> cancel <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>Save<span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Discard<span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Cancel
+
+    <span class="token keyword">if</span> self<span class="token punctuation">.</span>config<span class="token punctuation">.</span>language <span class="token operator">==</span> <span class="token string">'zh_CN'</span><span class="token punctuation">:</span>
+        msg <span class="token operator">=</span> <span class="token string">'图片未保存，是否保存'</span>
+        msg_box <span class="token operator">=</span> QMessageBox<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Warning<span class="token punctuation">,</span> <span class="token string">'保存修改？'</span><span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+        icon <span class="token operator">=</span> QIcon<span class="token punctuation">(</span><span class="token string">'./resources/logo.png'</span><span class="token punctuation">)</span>
+        msg_box<span class="token punctuation">.</span>setWindowIcon<span class="token punctuation">(</span>icon
+        msg_box<span class="token punctuation">.</span>setStandardButtons<span class="token punctuation">(</span>save<span class="token operator">|</span>discard<span class="token operator">|</span>cancel<span class="token punctuation">)</span>
+        btn_save <span class="token operator">=</span> msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Save<span class="token punctuation">)</span>
+        btn_save<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'保存'</span><span class="token punctuation">)</span>
+        btn_discard<span class="token operator">=</span>msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Discard<span class="token punctuation">)</span>
+        btn_discard<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'不保存'</span><span class="token punctuation">)</span>
+        btn_cancel<span class="token operator">=</span>msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Cancel<span class="token punctuation">)</span>
+        btn_cancel<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'取消'</span><span class="token punctuation">)</span>
+        msg_box<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> btn_cancel<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'点击取消'</span><span class="token punctuation">)</span>
+            e<span class="token punctuation">.</span>ignore<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span>btn_discard<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'不保存'</span><span class="token punctuation">)</span>
+            e<span class="token punctuation">.</span>accept<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span>btn_save<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'保存'</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>saveFile<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                e<span class="token punctuation">.</span>ignore<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span>
+            e<span class="token punctuation">.</span>accept<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment">## reply = QMessageBox.warning(self, '保存修改？', msg, save | discard | cancel, save)</span>
+
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        msg <span class="token operator">=</span> <span class="token string">'Do you want to save the picture?'</span>
+        reply <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>warning<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">'Save changes?'</span><span class="token punctuation">,</span> msg<span class="token punctuation">,</span> save <span class="token operator">|</span> discard <span class="token operator">|</span> cancel<span class="token punctuation">,</span> save<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> reply <span class="token operator">==</span> QMessageBox<span class="token punctuation">.</span>Cancel<span class="token punctuation">:</span>
+            e<span class="token punctuation">.</span>ignore<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> reply <span class="token operator">==</span> QMessageBox<span class="token punctuation">.</span>Discard<span class="token punctuation">:</span>
+            e<span class="token punctuation">.</span>accept<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> reply <span class="token operator">==</span> QMessageBox<span class="token punctuation">.</span>Save<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token keyword">not</span> self<span class="token punctuation">.</span>saveFile<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                e<span class="token punctuation">.</span>ignore<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span>
+            e<span class="token punctuation">.</span>accept<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="定制版：支持中英文、自定义按钮、按钮美化">定制版：支持中英文、自定义按钮、按钮美化</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QMessageBox
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QIcon
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QApplication<span class="token punctuation">,</span> QWidget
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> Qt
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> resources<span class="token punctuation">.</span>resources_qt5
+
+<span class="token keyword">def</span> <span class="token function">message_win</span><span class="token punctuation">(</span>title<span class="token punctuation">,</span> msg<span class="token punctuation">,</span> btn_list<span class="token punctuation">,</span> default_btn<span class="token punctuation">,</span> <span class="token builtin">type</span><span class="token operator">=</span><span class="token string">'warning'</span><span class="token punctuation">,</span> language<span class="token operator">=</span><span class="token string">'zh_CN'</span><span class="token punctuation">,</span> icon<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">'''
+    封装QMessageBox，支持按钮中文显示
+    两种模式弹出对话框：1、自定义QMessageBox，2、继承parent
+    '''</span>
+
+    style_true <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
+                width: 76px;
+                height: 24px;
+                background: rgba(0, 164, 255, 0.05);
+                border: 1px solid rgba(0, 164, 255, 0.2);
+                font-family: &quot;Microsoft YaHei&quot;;
+                font-weight: 400;
+                font-size: 14px;
+                color: ##00a4ff;
+                text-align:center; 
+    '''</span>
+    style_false <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
+        width: 76px;
+        height: 24px;
+        background: rgba(26, 155, 82, 0.05);
+        border: 1px solid rgba(26, 155, 82, 0.2);
+        font-family: &quot;Microsoft YaHei&quot;;
+        font-weight: 400;
+        font-size: 14px;
+        color: ##1a9b52;
+        text-align:center; 
+    '''</span>
+    style_cancel <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
+        width: 76px;
+        height: 24px;
+        background: rgba(80, 80, 80, 0.05);
+        border: 1px solid rgba(80, 80, 80, 0.2);
+        font-family: &quot;Microsoft YaHei&quot;;
+        font-weight: 400;
+        font-size: 14px;
+        color: ##5a5a5a;
+        text-align:center; 
+    '''</span>
+
+    <span class="token comment">## if language == 'zh_CN':</span>
+    <span class="token keyword">if</span> <span class="token builtin">type</span> <span class="token operator">==</span> <span class="token string">'warning'</span><span class="token punctuation">:</span>
+        msg_box <span class="token operator">=</span> QMessageBox<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Warning<span class="token punctuation">,</span> title<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> <span class="token builtin">type</span> <span class="token operator">==</span> <span class="token string">'information'</span><span class="token punctuation">:</span>
+        msg_box <span class="token operator">=</span> QMessageBox<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Information<span class="token punctuation">,</span> title<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> <span class="token builtin">type</span> <span class="token operator">==</span> <span class="token string">'critical'</span><span class="token punctuation">:</span>
+        msg_box <span class="token operator">=</span> QMessageBox<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Critical<span class="token punctuation">,</span> title<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> <span class="token builtin">type</span> <span class="token operator">==</span> <span class="token string">'question'</span><span class="token punctuation">:</span>
+        msg_box <span class="token operator">=</span> QMessageBox<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Question<span class="token punctuation">,</span> title<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token keyword">if</span> icon <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        my_icon <span class="token operator">=</span> QIcon<span class="token punctuation">(</span><span class="token string">':/logo2.png'</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        my_icon <span class="token operator">=</span> icon
+    msg_box<span class="token punctuation">.</span>setWindowIcon<span class="token punctuation">(</span>my_icon<span class="token punctuation">)</span>
+    msg_box<span class="token punctuation">.</span>setStandardButtons<span class="token punctuation">(</span>btn_list<span class="token punctuation">)</span>
+
+    btn_save <span class="token operator">=</span> msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Save<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> btn_save <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> language <span class="token operator">==</span> <span class="token string">'zh_CN'</span><span class="token punctuation">:</span>
+            btn_save<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'保存'</span><span class="token punctuation">)</span>
+        btn_save<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>style_true<span class="token punctuation">)</span>
+
+    btn_discard <span class="token operator">=</span> msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Discard<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> btn_discard <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> language <span class="token operator">==</span> <span class="token string">'zh_CN'</span><span class="token punctuation">:</span>
+            btn_discard<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'不保存'</span><span class="token punctuation">)</span>
+        btn_discard<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>style_false<span class="token punctuation">)</span>
+
+    btn_cancel <span class="token operator">=</span> msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Cancel<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> btn_cancel <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> language <span class="token operator">==</span> <span class="token string">'zh_CN'</span><span class="token punctuation">:</span>
+            btn_cancel<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'取消'</span><span class="token punctuation">)</span>
+        btn_cancel<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>style_cancel<span class="token punctuation">)</span>
+
+    btn_ok <span class="token operator">=</span> msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Ok<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> btn_ok <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> language <span class="token operator">==</span> <span class="token string">'zh_CN'</span><span class="token punctuation">:</span>
+            btn_ok<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'好的'</span><span class="token punctuation">)</span>
+        btn_ok<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>style_true<span class="token punctuation">)</span>
+
+    btn_no <span class="token operator">=</span> msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> btn_no <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> language <span class="token operator">==</span> <span class="token string">'zh_CN'</span><span class="token punctuation">:</span>
+            btn_no<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'否'</span><span class="token punctuation">)</span>
+        btn_no<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>style_false<span class="token punctuation">)</span>
+
+    btn_yes <span class="token operator">=</span> msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> btn_yes <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> language <span class="token operator">==</span> <span class="token string">'zh_CN'</span><span class="token punctuation">:</span>
+            btn_yes<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'是'</span><span class="token punctuation">)</span>
+        btn_yes<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>style_true<span class="token punctuation">)</span>
+
+    msg_box<span class="token punctuation">.</span>setDefaultButton<span class="token punctuation">(</span>msg_box<span class="token punctuation">.</span>button<span class="token punctuation">(</span>default_btn<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment">## child_list = msg_box.children()</span>
+    <span class="token comment">## for i in range(len(child_list)):</span>
+    <span class="token comment">##     obj = child_list[i]</span>
+    <span class="token comment">##     if obj.inherits(&quot;QWidget&quot;):</span>
+    <span class="token comment">##         obj.setStyleSheet(&quot;background-color: transparent;font-family: Microsoft YaHei;&quot;)</span>
+
+    style <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
+        background-color:white;
+        font-family: &quot;Microsoft YaHei&quot;;
+        font-weight: 400;
+        font-size: 14px;
+        color: ##1a1a1a;
+        text-align:center; 
+    '''</span>
+    msg_box<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>style<span class="token punctuation">)</span>
+    <span class="token comment">## msg_box.setWindowFlags(Qt.FramelessWindowHint)</span>
+    msg_box<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> btn_ok<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> QMessageBox<span class="token punctuation">.</span>Ok
+    <span class="token keyword">elif</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> btn_cancel<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> QMessageBox<span class="token punctuation">.</span>Cancel
+    <span class="token keyword">elif</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> btn_discard<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> QMessageBox<span class="token punctuation">.</span>Discard
+    <span class="token keyword">elif</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> btn_save<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> QMessageBox<span class="token punctuation">.</span>Save
+    <span class="token keyword">elif</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> btn_yes<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> QMessageBox<span class="token punctuation">.</span>Yes
+    <span class="token keyword">elif</span> msg_box<span class="token punctuation">.</span>clickedButton<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> btn_no<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> QMessageBox<span class="token punctuation">.</span>No
+
+        <span class="token comment">## reply = QMessageBox.warning(self, '保存修改？', msg, save | discard | cancel, save)</span>
+
+    <span class="token comment">## else:</span>
+    <span class="token comment">##     if type == 'warning':</span>
+    <span class="token comment">##         return QMessageBox.warning(parent, title, msg, btn_list, default_btn)</span>
+    <span class="token comment">##     elif type == 'information':</span>
+    <span class="token comment">##         return QMessageBox.information(parent, title, msg, btn_list, default_btn)</span>
+    <span class="token comment">##     elif type == 'critical':</span>
+    <span class="token comment">##         return QMessageBox.critical(parent, title, msg, btn_list, default_btn)</span>
+    <span class="token comment">##     else:</span>
+    <span class="token comment">##         return None</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">MyWin</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">'''
+    测试用
+    '''</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>MyWin<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">## self.resize(100, 100)</span>
+        icon <span class="token operator">=</span> QIcon<span class="token punctuation">(</span><span class="token string">':/logo2.png'</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setWindowIcon<span class="token punctuation">(</span>icon<span class="token punctuation">)</span>
+        <span class="token comment">## 继承parent的icon</span>
+        message_win<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">'title'</span><span class="token punctuation">,</span> msg<span class="token operator">=</span><span class="token string">'msg'</span><span class="token punctuation">,</span> btn_list<span class="token operator">=</span>QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span>
+                    default_btn<span class="token operator">=</span>QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">,</span> language<span class="token operator">=</span><span class="token string">'en'</span><span class="token punctuation">)</span>
+        <span class="token comment">## self.show()</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    <span class="token comment">## 中文</span>
+    reply <span class="token operator">=</span> message_win<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">'标题'</span><span class="token punctuation">,</span> msg<span class="token operator">=</span><span class="token string">'提示内容'</span><span class="token punctuation">,</span> btn_list<span class="token operator">=</span>QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token operator">|</span>QMessageBox<span class="token punctuation">.</span>Cancel<span class="token punctuation">,</span>
+                        default_btn<span class="token operator">=</span>QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">,</span> language<span class="token operator">=</span><span class="token string">'zh_CN'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>reply<span class="token punctuation">)</span>
+    <span class="token comment">##</span>
+    <span class="token comment">## reply = message_win(title='标题', msg='提示内容', btn_list=QMessageBox.Yes | QMessageBox.No|QMessageBox.Cancel,</span>
+    <span class="token comment">##                     default_btn=QMessageBox.Yes, language='zh_CN',type='information')</span>
+    <span class="token comment">## print(reply)</span>
+    <span class="token comment">##</span>
+    <span class="token comment">## reply = message_win(title='标题', msg='提示内容', btn_list=QMessageBox.Yes | QMessageBox.No|QMessageBox.Cancel,</span>
+    <span class="token comment">##                     default_btn=QMessageBox.Yes, language='zh_CN',type='critical')</span>
+    <span class="token comment">## print(reply)</span>
+    <span class="token comment">## 英文（不继承）</span>
+    reply <span class="token operator">=</span> message_win<span class="token punctuation">(</span> title<span class="token operator">=</span><span class="token string">'title'</span><span class="token punctuation">,</span> msg<span class="token operator">=</span><span class="token string">'msg'</span><span class="token punctuation">,</span> btn_list<span class="token operator">=</span>QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span>
+                        default_btn<span class="token operator">=</span>QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">,</span> language<span class="token operator">=</span><span class="token string">'en'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>reply<span class="token punctuation">)</span>
+    <span class="token comment">## 英文（继承）</span>
+    <span class="token comment">## win = MyWin()</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="qlabel">QLabel</h2> <h3 id="设置图标">设置图标</h3> <div class="language-python extra-class"><pre class="language-python"><code>label <span class="token operator">=</span> QLabel<span class="token punctuation">(</span><span class="token punctuation">)</span>
+label<span class="token punctuation">.</span>setPixmap<span class="token punctuation">(</span>QtGui<span class="token punctuation">.</span>QPixmap<span class="token punctuation">(</span><span class="token string">&quot;:/resources/模型设置.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="qlistwidget">QListWidget</h2> <p><img src="/pyQt%E4%B8%87%E8%83%BD%E5%8A%9F%E8%83%BD%E6%A8%A1%E6%9D%BF.assets/image-20220505123808092.png" alt="image-20220505123808092"></p> <h3 id="item可拖拽调整顺序、删除、双击弹出二级菜单、右键移动控件">item可拖拽调整顺序、删除、双击弹出二级菜单、右键移动控件</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token triple-quoted-string string">'''
+    包含可拖动item的QListWidget
+    两种模式：mode=files或mode=dirs
+    功能：
+        拖拽调整item顺序
+        右键菜单：上移、下移
+        mode=dirs情况下：
+            双击可弹窗，调整二级列表顺序
+'''</span>
+
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QApplication<span class="token punctuation">,</span> QListWidgetItem<span class="token punctuation">,</span> QWidget<span class="token punctuation">,</span> QHBoxLayout<span class="token punctuation">,</span> QListWidget<span class="token punctuation">,</span> QSpacerItem<span class="token punctuation">,</span> QPushButton<span class="token punctuation">,</span> \
+    QSizePolicy<span class="token punctuation">,</span> QMenu<span class="token punctuation">,</span> QMessageBox
+<span class="token keyword">from</span> PyQt5 <span class="token keyword">import</span> QtCore
+<span class="token keyword">import</span> PyQt5<span class="token punctuation">.</span>sip <span class="token keyword">as</span> sip
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> pyqtSignal
+<span class="token keyword">import</span> sys
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> Qt<span class="token punctuation">,</span> QModelIndex
+
+
+<span class="token keyword">class</span> <span class="token class-name">FileDirListItemWidget</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    signal_delItem <span class="token operator">=</span> pyqtSignal<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span>  <span class="token comment">## 删除item信号</span>
+    signal_moveUp <span class="token operator">=</span> pyqtSignal<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span>  <span class="token comment">## 上移item信号</span>
+    signal_moveDown <span class="token operator">=</span> pyqtSignal<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span>  <span class="token comment">## 下移item信号</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">,</span> parent<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>FileDirListItemWidget<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span>parent<span class="token operator">=</span>parent<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>text <span class="token operator">=</span> text
+        self<span class="token punctuation">.</span>setup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">setup</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        初始化itemWidget
+        :return:
+        '''</span>
+        <span class="token comment">## 布局层（组件添加到layout上）</span>
+        self<span class="token punctuation">.</span>layout <span class="token operator">=</span> QHBoxLayout<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>setContentsMargins<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>setSpacing<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+        <span class="token comment">## 弹簧</span>
+        self<span class="token punctuation">.</span>spacer <span class="token operator">=</span> QSpacerItem<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> QSizePolicy<span class="token punctuation">.</span>Expanding<span class="token punctuation">,</span> QSizePolicy<span class="token punctuation">.</span>Expanding<span class="token punctuation">)</span>
+
+        <span class="token comment">## 删除按钮</span>
+        self<span class="token punctuation">.</span>del_btn <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span><span class="token string">&quot;×&quot;</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>del_btn<span class="token punctuation">.</span>setFixedWidth<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>del_btn<span class="token punctuation">.</span>clicked<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>on_delete<span class="token punctuation">)</span>
+
+        <span class="token comment">## 右键菜单</span>
+        self<span class="token punctuation">.</span>setContextMenuPolicy<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>CustomContextMenu<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>customContextMenuRequested<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>custom_right_menu<span class="token punctuation">)</span>
+
+        <span class="token comment">## 控件加入layout</span>
+        self<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>addItem<span class="token punctuation">(</span>self<span class="token punctuation">.</span>spacer<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>self<span class="token punctuation">.</span>del_btn<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">on_delete</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        删除按钮的槽函数
+        :return:
+        '''</span>
+        self<span class="token punctuation">.</span>signal_delItem<span class="token punctuation">.</span>emit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>text<span class="token punctuation">)</span>  <span class="token comment">## 向父组件传递item的text，父组件根据text删除item</span>
+
+    <span class="token keyword">def</span> <span class="token function">custom_right_menu</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> pos<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        右键菜单
+        :param pos:
+        :return:
+        '''</span>
+        menu <span class="token operator">=</span> QMenu<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        opt1 <span class="token operator">=</span> menu<span class="token punctuation">.</span>addAction<span class="token punctuation">(</span><span class="token string">&quot;上移&quot;</span><span class="token punctuation">)</span>
+        opt2 <span class="token operator">=</span> menu<span class="token punctuation">.</span>addAction<span class="token punctuation">(</span><span class="token string">&quot;下移&quot;</span><span class="token punctuation">)</span>
+
+        action <span class="token operator">=</span> menu<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span>self<span class="token punctuation">.</span>mapToGlobal<span class="token punctuation">(</span>pos<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> action <span class="token operator">==</span> opt1<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'点击上移'</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>signal_moveUp<span class="token punctuation">.</span>emit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> action <span class="token operator">==</span> opt2<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'点击下移'</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>signal_moveDown<span class="token punctuation">.</span>emit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>text<span class="token punctuation">)</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">FileDirListWidget</span><span class="token punctuation">(</span>QListWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">'''
+    QListWidget窗口，用于调整item（顺序、删除）
+    '''</span>
+    signal_subLabelsWidgetClose <span class="token operator">=</span> pyqtSignal<span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">)</span>  <span class="token comment">## 窗口关闭信号</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> subLabels<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> mode<span class="token operator">=</span><span class="token string">'files'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+            mode可选：files、dirs
+            dirs模式下，item双击可弹出新窗口，调整subLabels顺序
+        :param labels:
+        :param mode:
+        '''</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>FileDirListWidget<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'mode:'</span><span class="token punctuation">,</span> mode<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'labels='</span><span class="token punctuation">,</span>labels<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'subLabels='</span><span class="token punctuation">,</span>subLabels<span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>labels <span class="token operator">=</span> labels        <span class="token comment">## files/dirs</span>
+        self<span class="token punctuation">.</span>subLabels <span class="token operator">=</span> subLabels  <span class="token comment">## None/files</span>
+        self<span class="token punctuation">.</span>mode <span class="token operator">=</span> mode
+        self<span class="token punctuation">.</span>setup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setDragDropMode<span class="token punctuation">(</span>QListWidget<span class="token punctuation">.</span>InternalMove<span class="token punctuation">)</span>  <span class="token comment">## 设置item拖拽模式</span>
+        self<span class="token punctuation">.</span>fileListWidget <span class="token operator">=</span> <span class="token boolean">None</span>
+
+    <span class="token keyword">def</span> <span class="token function">setup</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        初始化：添加item
+        :return:
+        '''</span>
+        <span class="token comment">## for label in self.labels:</span>
+        <span class="token comment">##     self.addItemWidget(label)</span>
+        self<span class="token punctuation">.</span>add_items<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment">## 事件绑定</span>
+        <span class="token comment">## 双击item事件</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>mode <span class="token operator">==</span> <span class="token string">'dirs'</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>doubleClicked<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>on_itemDoubleClicked<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">add_items</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        向widget添加items
+        :return:
+        '''</span>
+        self<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'self.labels='</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>labels<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>labels <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> label <span class="token keyword">in</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>addItemWidget<span class="token punctuation">(</span>label<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">del_Item</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        删除指定text的item
+        :param text:
+        :return:
+        '''</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'删除item：'</span><span class="token punctuation">,</span> text<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            item_i <span class="token operator">=</span> self<span class="token punctuation">.</span>item<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>itemWidget<span class="token punctuation">(</span>item_i<span class="token punctuation">)</span><span class="token punctuation">.</span>text <span class="token operator">==</span> text<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>takeItem<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+                sip<span class="token punctuation">.</span>delete<span class="token punctuation">(</span>item_i<span class="token punctuation">)</span>
+                self<span class="token punctuation">.</span>labels<span class="token punctuation">.</span>pop<span class="token punctuation">(</span>i<span class="token punctuation">)</span>  <span class="token comment">## 删除索引为i的元素</span>
+                <span class="token keyword">break</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'当前的文件列表：'</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">update_subLabels</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> labels<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        dirs模式下，返回子窗口调整顺序后的labels，并更新sublabels
+        :return:
+        '''</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'调整后的的labels：'</span><span class="token punctuation">,</span> labels<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'准备更新subLabels...'</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>subLabels<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>select_dir<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token operator">=</span>labels
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'更新后的文件顺序：'</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>subLabels<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>select_dir<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token comment">## print(self.subLabels)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'subLabels已更新...'</span><span class="token punctuation">)</span>
+
+
+    <span class="token keyword">def</span> <span class="token function">on_itemDoubleClicked</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> modelindex<span class="token punctuation">:</span> QModelIndex<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>subLabels<span class="token punctuation">)</span>
+        item <span class="token operator">=</span> self<span class="token punctuation">.</span>item<span class="token punctuation">(</span>modelindex<span class="token punctuation">.</span>row<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">## 获取双击的item</span>
+        <span class="token comment">## print(modelindex.row())</span>
+        dir_name <span class="token operator">=</span> item<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>select_dir<span class="token operator">=</span>dir_name
+        <span class="token keyword">print</span><span class="token punctuation">(</span>dir_name<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>subLabels<span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>subLabels<span class="token punctuation">.</span>get<span class="token punctuation">(</span>dir_name<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        labels <span class="token operator">=</span> self<span class="token punctuation">.</span>subLabels<span class="token punctuation">.</span>get<span class="token punctuation">(</span>dir_name<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>fileListWidget <span class="token operator">=</span> FileDirListWidget<span class="token punctuation">(</span>labels<span class="token punctuation">,</span> <span class="token string">'files'</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>fileListWidget<span class="token punctuation">.</span>resize<span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>fileListWidget<span class="token punctuation">.</span>signal_subLabelsWidgetClose<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>update_subLabels<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>fileListWidget<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment">## 重写窗口关闭事件，将调整后的file顺序返回</span>
+
+    <span class="token keyword">def</span> <span class="token function">on_labelUp</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        点击的label上移
+        :return:
+        '''</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>labels<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> text<span class="token punctuation">:</span>
+                <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'选中第一个item，无法上移！'</span><span class="token punctuation">)</span>
+                    res <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>critical<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">&quot;警告&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;选中第一个文件，无法上移！&quot;</span><span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span>
+                                               QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">)</span>
+                    <span class="token comment">## print(res)</span>
+                    <span class="token keyword">return</span>
+
+                tmp <span class="token operator">=</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+                self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span>
+                self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> tmp
+                <span class="token comment">## 更新items</span>
+                self<span class="token punctuation">.</span>add_items<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token keyword">break</span>
+
+    <span class="token keyword">def</span> <span class="token function">on_labelDown</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        点击的label下移
+        :return:
+        '''</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>labels<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> text<span class="token punctuation">:</span>
+                <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token builtin">len</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>labels<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">:</span>
+                    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'选中最后一个item，无法下移！'</span><span class="token punctuation">)</span>
+                    res <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>critical<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">&quot;警告&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;选中最后一个文件，无法下移！&quot;</span><span class="token punctuation">,</span> QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span>
+                                               QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">)</span>
+                    <span class="token comment">## print(res)</span>
+                    <span class="token keyword">return</span>
+
+                tmp <span class="token operator">=</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+                self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span>
+                self<span class="token punctuation">.</span>labels<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> tmp
+                <span class="token comment">## 更新items</span>
+                self<span class="token punctuation">.</span>add_items<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token keyword">break</span>
+
+    <span class="token keyword">def</span> <span class="token function">addItemWidget</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> label<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        向widget中添加itemWidget
+        :param label:
+        :return:
+        '''</span>
+        <span class="token comment">## 新建itemWidget</span>
+        item_widget <span class="token operator">=</span> FileDirListItemWidget<span class="token punctuation">(</span>text<span class="token operator">=</span>label<span class="token punctuation">)</span>
+
+        <span class="token comment">## 信号绑定</span>
+        item_widget<span class="token punctuation">.</span>signal_delItem<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>del_Item<span class="token punctuation">)</span>
+        item_widget<span class="token punctuation">.</span>signal_moveUp<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>on_labelUp<span class="token punctuation">)</span>
+        item_widget<span class="token punctuation">.</span>signal_moveDown<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>on_labelDown<span class="token punctuation">)</span>
+
+        item <span class="token operator">=</span> QListWidgetItem<span class="token punctuation">(</span>label<span class="token punctuation">)</span>
+        item<span class="token punctuation">.</span>setSizeHint<span class="token punctuation">(</span>QtCore<span class="token punctuation">.</span>QSize<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>addItem<span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setItemWidget<span class="token punctuation">(</span>item<span class="token punctuation">,</span> item_widget<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">dropEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> event<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        重写拖拽事件
+        :param event:
+        :return:
+        '''</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>FileDirListWidget<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>dropEvent<span class="token punctuation">(</span>event<span class="token punctuation">)</span>
+        res_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            item_i <span class="token operator">=</span> self<span class="token punctuation">.</span>item<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+            res_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>item_i<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>labels <span class="token operator">=</span> res_list
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'当前的列表：'</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>labels<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">closeEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> event<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">'''
+        重写窗口关闭事件，用于dirs模式
+        :param event:
+        :return:
+        '''</span>
+        <span class="token keyword">if</span> self<span class="token punctuation">.</span>mode <span class="token operator">==</span> <span class="token string">'files'</span><span class="token punctuation">:</span>
+            reply <span class="token operator">=</span> QMessageBox<span class="token punctuation">.</span>question<span class="token punctuation">(</span>self<span class="token punctuation">,</span>
+                                         <span class="token string">'保存修改？'</span><span class="token punctuation">,</span>
+                                         <span class="token string">&quot;是否保存对文件列表的修改？&quot;</span><span class="token punctuation">,</span>
+                                         QMessageBox<span class="token punctuation">.</span>Yes <span class="token operator">|</span> QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">,</span>
+                                         QMessageBox<span class="token punctuation">.</span>No<span class="token punctuation">)</span>
+            <span class="token keyword">if</span> reply <span class="token operator">==</span> QMessageBox<span class="token punctuation">.</span>Yes<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>signal_subLabelsWidgetClose<span class="token punctuation">.</span>emit<span class="token punctuation">(</span>self<span class="token punctuation">.</span>labels<span class="token punctuation">)</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'更新数据完成，关闭窗口...'</span><span class="token punctuation">)</span>
+                event<span class="token punctuation">.</span>accept<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                event<span class="token punctuation">.</span>accept<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+
+    <span class="token comment">## labels = [str(i + 1) + '.jpg' for i in range(10)]</span>
+    <span class="token comment">## myshow = FileDirListWidget(labels)</span>
+
+    dirs_num <span class="token operator">=</span> <span class="token number">10</span>
+    labels <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">''</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>dirs_num<span class="token punctuation">)</span><span class="token punctuation">]</span>
+    subLabels <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token builtin">str</span><span class="token punctuation">(</span>key <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg'</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token keyword">for</span> key <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>dirs_num<span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>labels<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>subLabels<span class="token punctuation">)</span>
+    myshow <span class="token operator">=</span> FileDirListWidget<span class="token punctuation">(</span>labels<span class="token punctuation">,</span> subLabels<span class="token punctuation">,</span> <span class="token string">'dirs'</span><span class="token punctuation">)</span>
+    myshow<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="qcheckbox">QCheckBox</h2> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">## 勾选状态事件与槽函数</span>
+self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>checkBox<span class="token punctuation">.</span>stateChanged<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>state_changed<span class="token punctuation">)</span>
+
+<span class="token comment">## 槽函数</span>
+<span class="token keyword">def</span> <span class="token function">state_changed</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'状态设置为：'</span><span class="token punctuation">,</span> state<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> state<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">:</span>  <span class="token comment">## 勾选</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'选项已勾选'</span><span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> state<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>  <span class="token comment">## 取消勾选</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'选项已取消勾选'</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="qfiledialog">QFileDialog</h2> <h3 id="文件类型列表设置">文件类型列表设置</h3> <ul><li>QFileDialog.getSaveFileName</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">save_dialog</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;Save Image in image formats(PNG,JPEG,BMP,TIFF)
+        &quot;&quot;&quot;</span>
+        <span class="token comment">## 不同文件扩展名以;;分隔；选择对应项后，会自动设置文件名的扩展名为()中的类型</span>
+        files_types <span class="token operator">=</span> <span class="token string">&quot;PNG (*.png);;JPEG (*.jpeg);;TIFF (*.tiff);;BMP(*.bmp)&quot;</span>
+        fileName<span class="token punctuation">,</span> _ <span class="token operator">=</span> QFileDialog<span class="token punctuation">.</span>getSaveFileName<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">'Export_Name'</span><span class="token punctuation">,</span> os<span class="token punctuation">.</span>getenv<span class="token punctuation">(</span><span class="token string">'HOME'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;untitled.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>files_types<span class="token punctuation">)</span>
+        fName <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>fileName<span class="token punctuation">)</span>
+        file_extension <span class="token operator">=</span> fName<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+        <span class="token keyword">if</span> file_extension <span class="token operator">==</span> <span class="token string">'png'</span> <span class="token keyword">or</span> file_extension <span class="token operator">==</span> <span class="token string">'jpeg'</span> <span class="token keyword">or</span> file_extension <span class="token operator">==</span> <span class="token string">'bmp'</span> <span class="token keyword">or</span> file_extension <span class="token operator">==</span> <span class="token string">'tiff'</span><span class="token punctuation">:</span>
+
+            QMessageBox<span class="token punctuation">.</span>about<span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token string">'Information'</span><span class="token punctuation">,</span> <span class="token string">&quot;File saved&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="qpushbutton">QPushButton</h2> <h3 id="基本事件绑定">基本事件绑定</h3> <div class="language-python extra-class"><pre class="language-python"><code>self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>pBtn<span class="token punctuation">.</span>clicked<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>slotA<span class="token punctuation">)</span>
+</code></pre></div><h3 id="绑定颜色选择器">绑定颜色选择器</h3> <ul><li>参考：<a href="https://www.jianshu.com/p/8475c0aa3334" target="_blank" rel="noopener noreferrer">PyQt5 ColorDialog(颜色选择器) 学习 - 简书 (jianshu.com)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <div class="language-python extra-class"><pre class="language-python"><code>self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>pBtnColorSelector<span class="token punctuation">.</span>clicked<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>setColor<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">colorSelector</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment">## 弹出颜色选择对话框</span>
+    color <span class="token operator">=</span> QColorDialog<span class="token punctuation">.</span>getColor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">## 检测用的选择是否合法(点击cancel就是非法,否则就是合法)</span>
+    <span class="token keyword">if</span> color<span class="token punctuation">.</span>isValid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> color<span class="token punctuation">.</span>name<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">False</span>
+
+<span class="token keyword">def</span> <span class="token function">setColor</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    color <span class="token operator">=</span> self<span class="token punctuation">.</span>colorSelector<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> color<span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>pBtnColorSelector<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token string">'QPushButton{background:%s};'</span> <span class="token operator">%</span> color<span class="token punctuation">)</span>
+</code></pre></div><h2 id="qtablewidget">QTableWidget</h2> <h3 id="添加包含控件的行-设置控件居中">添加包含控件的行&amp;设置控件居中</h3> <p><img src="/pyQt%E4%B8%87%E8%83%BD%E5%8A%9F%E8%83%BD%E6%A8%A1%E6%9D%BF.assets/image-20220425124135720.png" alt="image-20220425124135720"></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">addRow</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> rowData<span class="token punctuation">:</span> <span class="token builtin">list</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">'''
+        向单元格添加一行数据
+        :param rowData:
+        :return:
+        '''</span>
+    self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>setRowCount<span class="token punctuation">(</span>self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>rowCount<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    rowIndex <span class="token operator">=</span> self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>rowCount<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
+    itemOder <span class="token operator">=</span> QTableWidgetItem<span class="token punctuation">(</span>rowData<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    itemOder<span class="token punctuation">.</span>setTextAlignment<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>AlignHCenter <span class="token operator">|</span> Qt<span class="token punctuation">.</span>AlignVCenter<span class="token punctuation">)</span>
+    self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>setItem<span class="token punctuation">(</span>rowIndex<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> itemOder<span class="token punctuation">)</span>
+    widgetColorTag <span class="token operator">=</span> QWidget<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    btnColorTag <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    btnColorTag<span class="token punctuation">.</span>setEnabled<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+    btnColorTag<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token string">'QPushButton{width: 28px;height: 28px;background:%s;border:none;}'</span> <span class="token operator">%</span> rowData<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    btnColorTag<span class="token punctuation">.</span>setSizePolicy<span class="token punctuation">(</span>QSizePolicy<span class="token punctuation">.</span>Fixed<span class="token punctuation">,</span> QSizePolicy<span class="token punctuation">.</span>Fixed<span class="token punctuation">)</span>
+    layoutColorTag <span class="token operator">=</span> QHBoxLayout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    layoutColorTag<span class="token punctuation">.</span>setContentsMargins<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
+    layoutColorTag<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btnColorTag<span class="token punctuation">)</span>
+    widgetColorTag<span class="token punctuation">.</span>setLayout<span class="token punctuation">(</span>layoutColorTag<span class="token punctuation">)</span>
+    self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>setCellWidget<span class="token punctuation">(</span>rowIndex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> widgetColorTag<span class="token punctuation">)</span>
+    itemTagName <span class="token operator">=</span> QTableWidgetItem<span class="token punctuation">(</span>rowData<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    itemTagName<span class="token punctuation">.</span>setTextAlignment<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>AlignHCenter <span class="token operator">|</span> Qt<span class="token punctuation">.</span>AlignVCenter<span class="token punctuation">)</span>
+    self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>setItem<span class="token punctuation">(</span>rowIndex<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> itemTagName<span class="token punctuation">)</span>
+    widgetDelete <span class="token operator">=</span> QWidget<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    btnOp <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span><span class="token string">'删除'</span><span class="token punctuation">)</span>
+    btnOp<span class="token punctuation">.</span>setSizePolicy<span class="token punctuation">(</span>QSizePolicy<span class="token punctuation">.</span>Fixed<span class="token punctuation">,</span>QSizePolicy<span class="token punctuation">.</span>Fixed<span class="token punctuation">)</span>
+    btnOp<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+        QPushButton{
+            width: 68px;
+            height: 28px;
+            background: ##252b41;
+            border: 1px solid rgba(142, 159, 196, 0.3);
+            font-family: &quot;Microsoft YaHei&quot;;
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            color: ##8e9fc4;
+            border:none;
+        }
+        QPushButton:hover{
+            background:#2c344b;
+        }
+        '''</span><span class="token punctuation">)</span>
+        layoutDelete <span class="token operator">=</span> QHBoxLayout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        layoutDelete<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btnOp<span class="token punctuation">)</span>
+        layoutDelete<span class="token punctuation">.</span>setContentsMargins<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
+        widgetDelete<span class="token punctuation">.</span>setLayout<span class="token punctuation">(</span>layoutDelete<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>setCellWidget<span class="token punctuation">(</span>rowIndex<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> widgetDelete<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>setRowHeight<span class="token punctuation">(</span>rowIndex<span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="单元格按钮绑定删除事件（获取控件所在行列）">单元格按钮绑定删除事件（获取控件所在行列）</h3> <ul><li>基于QPoint和QModelIndex获取</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">deleteRow</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> btn<span class="token punctuation">:</span> QPushButton<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    widget <span class="token operator">=</span> btn<span class="token punctuation">.</span>parentWidget<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">## 由于btn外面嵌套了一层widget，应该通过获取这个widget所在位置确定按钮的位置（直接获取btn的位置得到的行列永远是0,1）</span>
+    modelIndex <span class="token operator">=</span> self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>indexAt<span class="token punctuation">(</span>QPoint<span class="token punctuation">(</span>widget<span class="token punctuation">.</span>frameGeometry<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>x<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> widget<span class="token punctuation">.</span>frameGeometry<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>y<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'点击了{}行{}列的按钮'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>modelIndex<span class="token punctuation">.</span>row<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> modelIndex<span class="token punctuation">.</span>column<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>tableWidget<span class="token punctuation">.</span>removeRow<span class="token punctuation">(</span>modelIndex<span class="token punctuation">.</span>row<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="qlistwidget-2">QListWidget</h2> <h3 id="自定义qlistwidgetitem">自定义QListWidgetItem</h3> <ul><li><p>先创建一个QListWidgetItem添加到QListWidget中，通过setSizeHint设置QListWidgetItem的尺寸，防止自定义的Widget加入后显示不全</p></li> <li><p>创建自定义的widget，通过self.ui.listWidget.setItemWidget(item, widget)替换原来的item</p></li> <li><p><img src="/pyQt%E4%B8%87%E8%83%BD%E5%8A%9F%E8%83%BD%E6%A8%A1%E6%9D%BF.assets/image-20220427181256355.png" alt="image-20220427181256355"></p></li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>Qt <span class="token keyword">import</span> Qt
+<span class="token keyword">from</span> PyQt5 <span class="token keyword">import</span> QtCore<span class="token punctuation">,</span> QtGui
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> QSize
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QPixmap
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> wisdom_store<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>main<span class="token punctuation">.</span>resources_qt5
+
+<span class="token triple-quoted-string string">'''
+自定义QListWidget的item的方法（item可包含多个控件）：
+    先创建一个QListWidgetItem添加到QListWidget中，然后创建自定义的widget，之后通过self.ui.listWidget.setItemWidget(item, widget)替换原来的item
+    
+'''</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">CustomItemWidget</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>text<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>CustomItemWidget<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        lay <span class="token operator">=</span> QHBoxLayout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        labelIcon <span class="token operator">=</span> QLabel<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        labelIcon<span class="token punctuation">.</span>setPixmap<span class="token punctuation">(</span>QtGui<span class="token punctuation">.</span>QPixmap<span class="token punctuation">(</span><span class="token string">&quot;:/resources/模型设置.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        labelIcon<span class="token punctuation">.</span>setSizePolicy<span class="token punctuation">(</span>QSizePolicy<span class="token punctuation">.</span>Fixed<span class="token punctuation">,</span> QSizePolicy<span class="token punctuation">.</span>Preferred<span class="token punctuation">)</span>
+        labelIcon<span class="token punctuation">.</span>setContentsMargins<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>labelIcon<span class="token punctuation">)</span>
+        labelItemName <span class="token operator">=</span> QLabel<span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+        labelItemName<span class="token punctuation">.</span>setAlignment<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>AlignLeft <span class="token operator">|</span> Qt<span class="token punctuation">.</span>AlignVCenter<span class="token punctuation">)</span>
+        labelItemName<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+            font-family: &quot;Microsoft YaHei&quot;;
+            font-weight: 400;
+            font-size: 14px;
+            color: ##dcefff;
+            border: 1px solid rgba(0, 0, 0, 0);
+        '''</span><span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>labelItemName<span class="token punctuation">)</span>
+        labelIndicator <span class="token operator">=</span> QLabel<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        labelIndicator<span class="token punctuation">.</span>setPixmap<span class="token punctuation">(</span>QtGui<span class="token punctuation">.</span>QPixmap<span class="token punctuation">(</span><span class="token string">&quot;:/resources/右箭头.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        labelIndicator<span class="token punctuation">.</span>setSizePolicy<span class="token punctuation">(</span>QSizePolicy<span class="token punctuation">.</span>Fixed<span class="token punctuation">,</span> QSizePolicy<span class="token punctuation">.</span>Preferred<span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>labelIndicator<span class="token punctuation">)</span>
+
+        lay<span class="token punctuation">.</span>setSpacing<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setLayout<span class="token punctuation">(</span>lay<span class="token punctuation">)</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">CustomListWidget</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>CustomListWidget<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>resize<span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">600</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>listWidget <span class="token operator">=</span> QListWidget<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>listWidget<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+            QListWidget{
+                background: ##2c344b;
+                border:none;
+                outline:0px;  /*去除选中item外轮廓虚线*/
+            }
+            QListWidget::item:selected{
+                background: ##21273C;
+                border:none;
+            }
+        '''</span><span class="token punctuation">)</span>
+
+        lay <span class="token operator">=</span> QHBoxLayout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>self<span class="token punctuation">.</span>listWidget<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setLayout<span class="token punctuation">(</span>lay<span class="token punctuation">)</span>
+
+        <span class="token comment">## item1</span>
+        listItem1 <span class="token operator">=</span> QListWidgetItem<span class="token punctuation">(</span>self<span class="token punctuation">.</span>listWidget<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>listWidget<span class="token punctuation">.</span>addItem<span class="token punctuation">(</span>listItem1<span class="token punctuation">)</span>
+        widget1 <span class="token operator">=</span> CustomItemWidget<span class="token punctuation">(</span><span class="token string">'模型设置'</span><span class="token punctuation">)</span>
+        listItem1<span class="token punctuation">.</span>setSizeHint<span class="token punctuation">(</span>QSize<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>listWidget<span class="token punctuation">.</span>setItemWidget<span class="token punctuation">(</span>listItem1<span class="token punctuation">,</span> widget1<span class="token punctuation">)</span>
+
+        <span class="token comment">## item2</span>
+        listItem2 <span class="token operator">=</span> QListWidgetItem<span class="token punctuation">(</span>self<span class="token punctuation">.</span>listWidget<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>listWidget<span class="token punctuation">.</span>addItem<span class="token punctuation">(</span>listItem2<span class="token punctuation">)</span>
+        widget2 <span class="token operator">=</span> CustomItemWidget<span class="token punctuation">(</span><span class="token string">'推理参数'</span><span class="token punctuation">)</span>
+        listItem2<span class="token punctuation">.</span>setSizeHint<span class="token punctuation">(</span>QSize<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">## 设置原始item的尺寸，否则自定义的widget可能显示不全</span>
+        self<span class="token punctuation">.</span>listWidget<span class="token punctuation">.</span>setItemWidget<span class="token punctuation">(</span>listItem2<span class="token punctuation">,</span> widget2<span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>listWidget<span class="token punctuation">.</span>setCurrentItem<span class="token punctuation">(</span>listItem1<span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>listWidget<span class="token punctuation">.</span>currentItemChanged<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>selectItem<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">selectItem</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> currentItem<span class="token punctuation">:</span> QListWidgetItem<span class="token punctuation">,</span> previousItem<span class="token punctuation">:</span> QListWidgetItem<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment">## currentItem.setBackground(QtGui.QColor('#21273C'))</span>
+        <span class="token comment">## if previousItem is not None:</span>
+        <span class="token comment">##     previousItem.setBackground(QtGui.QColor('#2C344B'))</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'当前选中：{}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>listWidget<span class="token punctuation">.</span>currentRow<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    <span class="token comment">## 自适应高分辨率屏幕（注意放在QApplication创建之前）</span>
+    QtCore<span class="token punctuation">.</span>QCoreApplication<span class="token punctuation">.</span>setAttribute<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>AA_EnableHighDpiScaling<span class="token punctuation">)</span>  <span class="token comment">## 适应windows缩放</span>
+    QtGui<span class="token punctuation">.</span>QGuiApplication<span class="token punctuation">.</span>setAttribute<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>HighDpiScaleFactorRoundingPolicy<span class="token punctuation">.</span>PassThrough<span class="token punctuation">)</span>  <span class="token comment">## 设置支持小数放大比例（适应如125%的缩放比）</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    widgetWindow <span class="token operator">=</span> CustomListWidget<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    widgetWindow<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><ul><li></li></ul> <h2 id="其他功能-操作">其他功能&amp;操作</h2> <h3 id="替换qtdesigner创建的控件-保持已绑定的事件处理方法仍然有效">替换QtDesigner创建的控件&amp;保持已绑定的事件处理方法仍然有效</h3> <h3 id="_1、继承qlabel，增加点击事件（以重写qlabel增加点击事件为例）">1、继承QLabel，增加点击事件（以重写QLabel增加点击事件为例）</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">QLabelUser</span><span class="token punctuation">(</span>QLabel<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    signal_clicked <span class="token operator">=</span> pyqtSignal<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>QLabelUser<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setText<span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+        sizePolicy <span class="token operator">=</span> QSizePolicy<span class="token punctuation">(</span>QSizePolicy<span class="token punctuation">.</span>Fixed<span class="token punctuation">,</span> QSizePolicy<span class="token punctuation">.</span>Fixed<span class="token punctuation">)</span>
+        sizePolicy<span class="token punctuation">.</span>setHorizontalStretch<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+        sizePolicy<span class="token punctuation">.</span>setVerticalStretch<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+        sizePolicy<span class="token punctuation">.</span>setHeightForWidth<span class="token punctuation">(</span>self<span class="token punctuation">.</span>sizePolicy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hasHeightForWidth<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setSizePolicy<span class="token punctuation">(</span>sizePolicy<span class="token punctuation">)</span>
+        font <span class="token operator">=</span> QFont<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        font<span class="token punctuation">.</span>setFamily<span class="token punctuation">(</span><span class="token string">&quot;Microsoft YaHei&quot;</span><span class="token punctuation">)</span>
+        font<span class="token punctuation">.</span>setPointSize<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+        font<span class="token punctuation">.</span>setBold<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+        font<span class="token punctuation">.</span>setWeight<span class="token punctuation">(</span><span class="token number">62</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setFont<span class="token punctuation">(</span>font<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token string">&quot;font-family: \&quot;Microsoft YaHei\&quot;;\n&quot;</span>
+                           <span class="token string">&quot;font-weight: 500;\n&quot;</span>
+                           <span class="token string">&quot;font-size: 16px;\n&quot;</span>
+                           <span class="token string">&quot;line-height: 14px;\n&quot;</span>
+                           <span class="token string">&quot;text-align: left;\n&quot;</span>
+                           <span class="token string">&quot;color: ##fff;&quot;</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setAlignment<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>AlignCenter<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setObjectName<span class="token punctuation">(</span><span class="token string">&quot;label_user&quot;</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setCursor<span class="token punctuation">(</span>QCursor<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>ArrowCursor<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">mousePressEvent</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> ev<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>signal_clicked<span class="token punctuation">.</span>emit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'信号发送'</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="_2、替换控件">2、替换控件</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">## 替换欢迎信息的label，增加点击事件</span>
+<span class="token comment">## 创建新的控件</span>
+self<span class="token punctuation">.</span>label_user <span class="token operator">=</span> QLabelUser<span class="token punctuation">(</span><span class="token string">'欢迎使用'</span><span class="token punctuation">)</span>
+self<span class="token punctuation">.</span>label_user<span class="token punctuation">.</span>setParent<span class="token punctuation">(</span>self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>widget_welcome<span class="token punctuation">)</span>
+self<span class="token punctuation">.</span>label_user<span class="token punctuation">.</span>signal_clicked<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>show_auth_win<span class="token punctuation">)</span>
+
+<span class="token comment">## self.ui.label_user = self.label_user  ## 替换布局的widget与直接覆盖原始ui的控件的效果不完全一样</span>
+lay1 <span class="token operator">=</span> self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>widget_welcome<span class="token punctuation">.</span>layout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+widget_label_user <span class="token operator">=</span> lay1<span class="token punctuation">.</span>itemAt<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>widget<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">## 获取原始控件（指向self.ui.label_user）</span>
+widget_label_user <span class="token operator">=</span> self<span class="token punctuation">.</span>label_user  <span class="token comment">## 替换控件（勿删）【此方法替换后，self.ui.label_user绑定的事件仍然有效】</span>
+</code></pre></div><h3 id="设置鼠标手势">设置鼠标手势</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QCursor
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> Qt
+
+self<span class="token punctuation">.</span>ui<span class="token punctuation">.</span>btn<span class="token punctuation">.</span>setCursor<span class="token punctuation">(</span>QCursor<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>PointingHandCursor<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">## 鼠标在某个控件上的样式</span>
+self<span class="token punctuation">.</span>setCursor<span class="token punctuation">(</span>QCursor<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>ArrowCursor<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">## 界面全局的鼠标样式</span>
+
+<span class="token triple-quoted-string string">'''
+常用手势：
+textToCursorShape = {
+            u'正常': Qt.ArrowCursor,  ## 正常样式
+            u'后台运行': Qt.BusyCursor,
+            u'等待': Qt.WaitCursor,
+            u'精准十字': Qt.CrossCursor,
+            u'禁止': Qt.ForbiddenCursor,     
+            u'食指手型': Qt.PointingHandCursor,  ## 点击样式
+            u'打开手型': Qt.OpenHandCursor,  ## 拖拽样式
+            u'关闭手型': Qt.ClosedHandCursor,
+            u'水平调整': Qt.SizeHorCursor,
+            u'垂直调整': Qt.SizeVerCursor,
+            u'沿对角线调整1': Qt.SizeFDiagCursor,
+            u'沿对角线调整2': Qt.SizeBDiagCursor,
+            u'候选上箭头': Qt.UpArrowCursor,
+            u'移动': Qt.SizeAllCursor,
+            u'文本选择': Qt.IBeamCursor,
+            u'帮助选择': Qt.WhatsThisCursor,
+            u'水平分割': Qt.SplitHCursor,
+            u'垂直分割': Qt.SplitVCursor,
+            u'空': Qt.BlankCursor,
+            u'自定义': custonCursor
+        }
+'''</span>
+</code></pre></div><h2 id="qt样式设置">Qt样式设置</h2> <ul><li>样式美化见：<a href="/YoferVuePressHome/blog/PyqtLearning/QSS万能样式模板.html">QSS万能样式模板.md</a></li></ul> <h3 id="_1-通过窗口对象设置样式">1.通过窗口对象设置样式</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QWidget<span class="token punctuation">,</span> QPushButton<span class="token punctuation">,</span> QVBoxLayout<span class="token punctuation">,</span> QApplication
+<span class="token keyword">import</span> sys
+
+
+<span class="token keyword">class</span> <span class="token class-name">QSSBasic</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>QSSBasic<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        btn1 <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        btn1<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'按钮1'</span><span class="token punctuation">)</span>
+        btn2 <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        btn2<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'按钮2'</span><span class="token punctuation">)</span>
+        btn3 <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        btn3<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'按钮3'</span><span class="token punctuation">)</span>
+
+        lay <span class="token operator">=</span> QVBoxLayout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btn1<span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btn2<span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btn3<span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>setLayout<span class="token punctuation">(</span>lay<span class="token punctuation">)</span>
+
+        <span class="token comment">## 设置样式</span>
+        qssStyle <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
+            QPushButton{
+                background-color:yellow;
+            }
+        '''</span>
+        self<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>qssStyle<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    win <span class="token operator">=</span> QSSBasic<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="_2-使用qss选择器设置控件样式">2.使用QSS选择器设置控件样式</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QWidget<span class="token punctuation">,</span> QPushButton<span class="token punctuation">,</span> QVBoxLayout<span class="token punctuation">,</span> QApplication
+<span class="token keyword">import</span> sys
+
+
+<span class="token keyword">class</span> <span class="token class-name">QSSSelector</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>QSSSelector<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        btn1 <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        btn1<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'按钮1'</span><span class="token punctuation">)</span>
+        btn1<span class="token punctuation">.</span>setProperty<span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">,</span> <span class="token string">'btn1'</span><span class="token punctuation">)</span>  <span class="token comment">## 为控件设置属性</span>
+        btn2 <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        btn2<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'按钮2'</span><span class="token punctuation">)</span>
+        btn3 <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        btn3<span class="token punctuation">.</span>setText<span class="token punctuation">(</span><span class="token string">'按钮3'</span><span class="token punctuation">)</span>
+
+        lay <span class="token operator">=</span> QVBoxLayout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btn1<span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btn2<span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btn3<span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>setLayout<span class="token punctuation">(</span>lay<span class="token punctuation">)</span>
+
+        <span class="token comment">## 设置样式</span>
+        qssStyle <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
+            QPushButton[name='btn1']{
+                background-color:yellow;
+            }
+        '''</span>
+        self<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>qssStyle<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    win <span class="token operator">=</span> QSSSelector<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="_3-子控件选择器">3.子控件选择器</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QWidget<span class="token punctuation">,</span> QComboBox<span class="token punctuation">,</span> QVBoxLayout<span class="token punctuation">,</span> QApplication
+<span class="token keyword">import</span> sys
+
+
+<span class="token keyword">class</span> <span class="token class-name">QSSSubControl</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>QSSSubControl<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>setWindowTitle<span class="token punctuation">(</span><span class="token string">'QSS子控件选择器'</span><span class="token punctuation">)</span>
+        combobox<span class="token operator">=</span>QComboBox<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        combobox<span class="token punctuation">.</span>setObjectName<span class="token punctuation">(</span><span class="token string">'myComboBox'</span><span class="token punctuation">)</span>
+        combobox<span class="token punctuation">.</span>addItem<span class="token punctuation">(</span><span class="token string">'Windows'</span><span class="token punctuation">)</span>
+        combobox<span class="token punctuation">.</span>addItem<span class="token punctuation">(</span><span class="token string">'Linux'</span><span class="token punctuation">)</span>
+        combobox<span class="token punctuation">.</span>addItem<span class="token punctuation">(</span><span class="token string">'Unix'</span><span class="token punctuation">)</span>
+
+        combobox<span class="token punctuation">.</span>move<span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span><span class="token number">50</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>setGeometry<span class="token punctuation">(</span><span class="token number">250</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">,</span><span class="token number">320</span><span class="token punctuation">,</span><span class="token number">150</span><span class="token punctuation">)</span>
+
+        <span class="token comment">## 设置样式【#号相当于id；::后为子控件】</span>
+        qssStyle <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
+            QComboBox##myComboBox::drop-down{
+                image:url(下拉.png)
+            }
+        '''</span>
+        self<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>qssStyle<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    win <span class="token operator">=</span> QSSSubControl<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="_4-窗口样式">4.窗口样式</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> sys
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> Qt
+
+
+<span class="token keyword">class</span> <span class="token class-name">WindowPattern</span><span class="token punctuation">(</span>QMainWindow<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>WindowPattern<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>resize<span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">,</span> <span class="token number">260</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setWindowTitle<span class="token punctuation">(</span><span class="token string">'设置窗口的样式'</span><span class="token punctuation">)</span>
+
+        <span class="token comment">## self.setWindowFlags(Qt.WindowMaximizeButtonHint | Qt.WindowStaysOnTopHint|Qt.FramelessWindowHint)</span>
+        self<span class="token punctuation">.</span>setWindowFlags<span class="token punctuation">(</span>Qt<span class="token punctuation">.</span>WindowCloseButtonHint <span class="token operator">|</span> Qt<span class="token punctuation">.</span>WindowMaximizeButtonHint<span class="token operator">|</span>Qt<span class="token punctuation">.</span>WindowMinimizeButtonHint<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setObjectName<span class="token punctuation">(</span><span class="token string">'MainWindow'</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token string">&quot;#MainWindow{border-image:url(背景.jpg);}&quot;</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    win <span class="token operator">=</span> WindowPattern<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="_5-为标签和按钮添加背景图">5.为标签和按钮添加背景图</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">import</span> sys
+
+
+<span class="token keyword">class</span> <span class="token class-name">LabelButtonBackground</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>LabelButtonBackground<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        label1<span class="token operator">=</span>QLabel<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        label1<span class="token punctuation">.</span>setToolTip<span class="token punctuation">(</span><span class="token string">'这是一个文本标签'</span><span class="token punctuation">)</span>
+        label1<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span><span class="token string">&quot;QLabel{border-image:url('背景.jpg');}&quot;</span><span class="token punctuation">)</span>
+
+        label1<span class="token punctuation">.</span>setFixedWidth<span class="token punctuation">(</span><span class="token number">476</span><span class="token punctuation">)</span>
+        label1<span class="token punctuation">.</span>setFixedHeight<span class="token punctuation">(</span><span class="token number">259</span><span class="token punctuation">)</span>
+
+        btn1 <span class="token operator">=</span> QPushButton<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        btn1<span class="token punctuation">.</span>setObjectName<span class="token punctuation">(</span><span class="token string">'btn1'</span><span class="token punctuation">)</span>
+        btn1<span class="token punctuation">.</span>setFixedWidth<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span>
+        btn1<span class="token punctuation">.</span>setFixedHeight<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span>
+
+        style <span class="token operator">=</span> <span class="token triple-quoted-string string">'''
+            ##btn1{
+                background-image:url('添加.png');
+            }
+            ##btn1:Pressed{
+                background-image:url('已添加.png');
+            }
+        '''</span>
+
+        btn1<span class="token punctuation">.</span>setStyleSheet<span class="token punctuation">(</span>style<span class="token punctuation">)</span>
+
+        lay <span class="token operator">=</span> QVBoxLayout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>label1<span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addStretch<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>btn1<span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>setLayout<span class="token punctuation">(</span>lay<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    win <span class="token operator">=</span> LabelButtonBackground<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="_6-缩放图片">6.缩放图片</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtGui <span class="token keyword">import</span> QImage<span class="token punctuation">,</span> QPixmap
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtCore <span class="token keyword">import</span> Qt
+<span class="token keyword">import</span> sys
+
+
+<span class="token keyword">class</span> <span class="token class-name">LabelButtonBackground</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>LabelButtonBackground<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        label1 <span class="token operator">=</span> QLabel<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        label1<span class="token punctuation">.</span>setToolTip<span class="token punctuation">(</span><span class="token string">'这是一个文本标签'</span><span class="token punctuation">)</span>
+
+        label1<span class="token punctuation">.</span>setFixedWidth<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+        label1<span class="token punctuation">.</span>setFixedHeight<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span>
+
+        filename <span class="token operator">=</span> <span class="token string">'添加.png'</span>
+        img <span class="token operator">=</span> QImage<span class="token punctuation">(</span>filename<span class="token punctuation">)</span>
+
+        <span class="token comment">## img_scaled = img.scaled(label1.width(), label1.height(), Qt.IgnoreAspectRatio, Qt.SmoothTransformation)</span>
+        img_scaled <span class="token operator">=</span> img<span class="token punctuation">.</span>scaled<span class="token punctuation">(</span>label1<span class="token punctuation">.</span>width<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> label1<span class="token punctuation">.</span>height<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>Qt<span class="token punctuation">.</span>KeepAspectRatio<span class="token punctuation">,</span> Qt<span class="token punctuation">.</span>SmoothTransformation<span class="token punctuation">)</span>
+        label1<span class="token punctuation">.</span>setPixmap<span class="token punctuation">(</span>QPixmap<span class="token punctuation">.</span>fromImage<span class="token punctuation">(</span>img_scaled<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        lay <span class="token operator">=</span> QVBoxLayout<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>label1<span class="token punctuation">)</span>
+        lay<span class="token punctuation">.</span>addStretch<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>setLayout<span class="token punctuation">(</span>lay<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    win <span class="token operator">=</span> LabelButtonBackground<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="_7-窗口透明效果">7.窗口透明效果</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>Qt <span class="token keyword">import</span> <span class="token operator">*</span>
+<span class="token keyword">import</span> sys
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    win <span class="token operator">=</span> QMainWindow<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>setWindowTitle<span class="token punctuation">(</span><span class="token string">'窗口透明效果'</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>setWindowOpacity<span class="token punctuation">(</span><span class="token number">0.1</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>resize<span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span>
+    win<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/YoferVuePressHome/blog/PyqtLearning/" class="prev router-link-active">PyqtLearning</a></span> <span class="next"><a href="/YoferVuePressHome/blog/PyqtLearning/QSS万能样式模板.html">QSS万能样式模板</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/YoferVuePressHome/assets/js/app.9c25632e.js" defer></script><script src="/YoferVuePressHome/assets/js/2.22e95c4d.js" defer></script><script src="/YoferVuePressHome/assets/js/19.5f472fc1.js" defer></script>
+  </body>
+</html>

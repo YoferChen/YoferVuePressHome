@@ -53,7 +53,7 @@ function genBlogSidebarConfig () {
     {
       title: '介绍',
       path: '/blog/',
-      collapsable: false,
+      collapsable: true,
       children: [
         '',
       ]
@@ -61,7 +61,7 @@ function genBlogSidebarConfig () {
     {
       title: '系统维护手册',
       path: '/blog/SystemMaintenance/',
-      collapsable: false,
+      collapsable: true,
       children: [
         '/blog/SystemMaintenance/',
         '/blog/SystemMaintenance/Linux',
@@ -72,10 +72,22 @@ function genBlogSidebarConfig () {
     {
       title: '论文笔记',
       path: '/blog/PaperNotes/',
-      collapsable: false,
+      collapsable: true,
       children: [
         '/blog/PaperNotes/',
       ]
+    },
+    {
+      title: 'PyQt5',
+      path: '/blog/PyqtLearning/',
+      collapsable: false,
+      children: [
+        '/blog/PyqtLearning/',
+        '/blog/PyqtLearning/pyQt万能功能模板',
+        '/blog/PyqtLearning/QSS万能样式模板',
+        '/blog/PyqtLearning/QT美化之QSS笔记',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
     },
   ]
 }

@@ -6,8 +6,8 @@
   "repository": "https://github.com/YoferChen/YoferVuePressHome.git",
   "scripts": {
     "clean": "rimraf dist/*",
-    "dev": "vuepress dev docs --port=3000",
-    "build": "vuepress build docs"
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs --port=3000",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
