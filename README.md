@@ -35,7 +35,7 @@ Make sure you have [Node.js](https://nodejs.org) and [yarn](https://yarnpkg.com)
 ```bash
 # Clone the repo
 git clone https://github.com/YoferChen/YoferVuePressHome.git
-cd vuepress-homepage
+cd YoferVuePressHome
 
 # Install VuePress
 yarn global add vuepress

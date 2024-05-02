@@ -2,8 +2,8 @@
 
 - Windows
 - Linux
-- Termux
+<!-- - Termux -->
 
-## 测试1
+## Windows
 
-## 测试2
+## Linux

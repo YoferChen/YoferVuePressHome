@@ -1,19 +1,13 @@
-# Introduction
+# 博客主页
 
-博客主页
+欢迎访问Yofer' Home的博客
 
-This is a skeleton built for generating static site for yourself, especially helpful and friendly to students, teachers, developers, researchers and so on.
+希望在这里您能找到所需的技术解决方案，编者相信知识的分享能够带来无限的可能和价值。让我们一起用编码艺术构建我们的智慧王国吧！
 
-It's suitable for building your personal homepage with:
-- About me :raising_hand:
-- Projects, publications, portfolio :books:
-- Biography, timeline, resume :page_with_curl: 
+有任何疑问或者错误反馈，请通过 About页面的联系方式联系我吧~
 
-## Features
-- Markdown and emoji supported :smiley:
-- Elegant and minimalistic
-- Customizable and mobile-friendly
-- Multi-language support
-- Powered by [VuePress](https://vuepress.vuejs.org/) and [Vue.js](https://vuejs.org/)
+## 目录
+- 【2023.05】 :point_right:[PyQt5](/blog/PyqtLearning):point_left: PyQt5技术笔记上线，包括基本控件的使用以及自定义控件的实现
+- 【计划】    :point_right:[系统维护手册](/blog/SystemMaintenance):point_left: 系统维护手册即将上线（预计提供常用系统软件的安装部署教程）
 
-Now, let's try it :point_right:
+<!-- Now, let's try it :point_right: -->

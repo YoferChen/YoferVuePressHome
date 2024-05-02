@@ -11,7 +11,7 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/about/" },
-      // { text: "Projects", link: "/projects/" },
+      { text: "Projects", link: "/projects/" },
       { text: "Experiences", link: "/experiences/" },
       { text: "Blog", link: "/blog/" },
       { text: "Guide", link: "/guide/" },
@@ -59,25 +59,6 @@ function genBlogSidebarConfig () {
       ]
     },
     {
-      title: '系统维护手册',
-      path: '/blog/SystemMaintenance/',
-      collapsable: true,
-      children: [
-        '/blog/SystemMaintenance/',
-        '/blog/SystemMaintenance/Linux',
-        '/blog/SystemMaintenance/Windows',
-        '/blog/SystemMaintenance/Termux',
-      ]
-    },
-    {
-      title: '论文笔记',
-      path: '/blog/PaperNotes/',
-      collapsable: true,
-      children: [
-        '/blog/PaperNotes/',
-      ]
-    },
-    {
       title: 'PyQt5',
       path: '/blog/PyqtLearning/',
       collapsable: false,
@@ -89,6 +70,25 @@ function genBlogSidebarConfig () {
       ],
       sidebarDepth: 3  //左侧导航展开级数
     },
+    {
+      title: '系统维护手册',
+      path: '/blog/SystemMaintenance/',
+      collapsable: false,
+      children: [
+        '/blog/SystemMaintenance/',
+        '/blog/SystemMaintenance/Linux',
+        '/blog/SystemMaintenance/Windows',
+        '/blog/SystemMaintenance/Termux',
+      ]
+    },
+    // {
+    //   title: '论文笔记',
+    //   path: '/blog/PaperNotes/',
+    //   collapsable: true,
+    //   children: [
+    //     '/blog/PaperNotes/',
+    //   ]
+    // },
   ]
 }
 
