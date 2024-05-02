@@ -3,7 +3,7 @@ module.exports = {
   description: "This is a vuepress website of YoferChen",
   // base: "/yofervuepresshome/",
   base: "/YoferVuePressHome/",
-  head: [["link", { rel: "icon", href: `/favicon.ico` }]],
+  head: [["link", { rel: "icon", href: `/yofer_favicon.ico` }]],
   dest: "./dist",
 
   themeConfig: {
