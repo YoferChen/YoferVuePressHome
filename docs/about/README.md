@@ -18,12 +18,12 @@ socials:
   link: 'mailto:1732562137@qq.com'
 actions:
 - text: Home
-  link: /
+  link: /YoferVuePressHome/
 - text: Projects
-  link: /projects/
+  link: /YoferVuePressHome/projects/
 - text: Blog
   # link: https://blog.csdn.net/weixin_44002829
-  link: /blog
+  link: /YoferVuePressHome/blog/
 # - text: Article
 #   link: /article/
 footer: Made with ♥ by Yofer. Powered by VuePress
