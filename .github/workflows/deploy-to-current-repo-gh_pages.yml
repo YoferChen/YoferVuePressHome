@@ -12,6 +12,6 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: YoferChen/YoferVuePressHome
-        TARGET_BRANCH: blog_pages
+        TARGET_BRANCH: blog-pages
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: dist/
