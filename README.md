@@ -1,6 +1,6 @@
 <h1 align="center">
-  <a href="https://github.com/mtobeiyf/vuepress-homepage" title="Homepage">
-    <img src="https://user-images.githubusercontent.com/5097752/39163721-4c79012c-47ae-11e8-842b-2af72f69cc2c.jpg" width="300px" alt="">
+  <a href="./docs/.vuepress/public/home/Readme.png" title="Homepage">
+    <img src="./docs/.vuepress/public/home/Readme.png" width="300px" alt="">
   </a>
   <br />
   Yofer's Home power by VuePress
@@ -17,13 +17,13 @@
 
 ## The project is based on [vuepress-homepage](https://github.com/imfing/vuepress-homepage)
 
-## [Live Demo](https://vuepress-homepage.netlify.com)
+## [Go to Home Page](https://yoferchen.github.io/YoferVuePressHome/)
 
-Click the title to enter the live website.
+Click the title to enter the website.
 
 
 <h2>
-  <a href="https://vuepress-homepage.netlify.com/guide/" target="_blank" title="Getting Started">
+  <a href="https://yoferchen.github.io/YoferVuePressHome/guide/" target="_blank" title="Getting Started">
     Getting Started
   </a>
 </h2>
@@ -44,12 +44,20 @@ yarn global add vuepress
 yarn
 
 # Run
-$ yarn dev
+yarn dev
+
+# Build [Optional]
+yarn build
 ```
 
-Check your site at `http://127.0.0.1:8080/`
+Check your site at `http://localhost:3000/YoferVuePressHome/`
+
+## Notice
+1. Please refer to the resource file using the relative path of `./XXX.png` insteaf of `XXX.png`. (Recommand)
+2. Please use the absolute path of `/base_url/XXX.png` to reference the resource file, base_url correspond to the base setting in `docs/.vuepress/config.js`. For example:  `/YoferVuePressHome/home/Readme.png`
 
 ## Deploy
+### 1. Manual
 ```bash
 yarn build
 
@@ -60,6 +68,15 @@ git commit -m deploy
 # Upload the dist to branch of blog-pages
 git push -f git@github.com:YoferChen/YoferVuePressHome.git master:blog-pages
 ```
+### 2. Automated Deployment with Git Actions
+> This project already supports automatic deployment of Git Actions to Git Pages
+
+- Create Personal Access Tokens
+![](./docs/.vuepress/public/home/PersonalAccessTokens.png)
+- Add Access Token for Repository
+![](./docs/.vuepress/public/home/ACCESS_TOKEN.png)
+- Enable Git Action
+![](./docs/.vuepress/public/home/GitAction.png)
 
 <br/>
 
@@ -67,32 +84,11 @@ git push -f git@github.com:YoferChen/YoferVuePressHome.git master:blog-pages
 
 | Home/Resume :newspaper: | Projects/Publications :books: |
 | :---: | :---: |
-| <img src="https://user-images.githubusercontent.com/5097752/71707796-8b275880-2dba-11ea-8db0-03172722c35d.png"/> | <img src="https://user-images.githubusercontent.com/5097752/71707797-8b275880-2dba-11ea-8239-c51f4bac6542.png"/> |
+| <img src="./docs/.vuepress/public/home/1-home.png"/> | <img src="./docs/.vuepress/public/home/3-projects.png"/> |
 
 | About Me :raising_hand: | Docs/Articles :closed_book: |
 | :---: | :---: |
-| <img src="https://user-images.githubusercontent.com/5097752/71707795-8b275880-2dba-11ea-9440-987d542c560c.png"/> | <img src="https://user-images.githubusercontent.com/5097752/71707798-8b275880-2dba-11ea-9777-d9d64ac4ad45.png"/> |
-
-## Features
-
-- Markdown and emoji supported :smiley:
-- Elegant and minimalistic
-- Customizable and mobile-friendly
-- Multi-language support
-- Powered by [VuePress](https://vuepress.vuejs.org/) and [Vue.js](https://vuejs.org/)
-
-It's **static**, which means once generated, your site could be deployed anywhere, like [Netlify](https://www.netlify.com/) or [GitHub Pages]()
-
-| Simple Editing | Elegant Output |
-| :---: | :---: |
-| <img src="https://user-images.githubusercontent.com/5097752/39165083-42470364-47b5-11e8-8e1b-e225e6cf4161.png"/> | <img src="https://user-images.githubusercontent.com/5097752/39165092-4af03422-47b5-11e8-986e-02bee0fe6979.jpg"/> |
-
-It's **responsive** and **mobile friendly**.
-
-| Main | Projects | Doc | Sidebar |
-| :---: | :---: | :---: | :---: |
-| <img src="https://user-images.githubusercontent.com/5097752/39163461-30a0e754-47ad-11e8-84ff-0c6716d6e937.jpg"/> | <img src="https://user-images.githubusercontent.com/5097752/39163230-2c917634-47ac-11e8-9c08-a87336c0bb02.jpg"/> | <img src="https://user-images.githubusercontent.com/5097752/39163235-32001436-47ac-11e8-8a80-f5aa1d639b82.png"/> | <img src="https://user-images.githubusercontent.com/5097752/39163238-368bfb5a-47ac-11e8-81b9-78a38af16dfe.jpg"/> |
-
+| <img src="./docs/.vuepress/public/home/2-about.png"/> | <img src="./docs/.vuepress/public/home/4-blogs.png"/> |
 
 
 ## Credit
@@ -103,6 +99,6 @@ It's **responsive** and **mobile friendly**.
 
 ## License
 
-Copyright © 2022, YoferChen
+Copyright © 2025, YoferChen
 
 Released under the [MIT License](https://opensource.org/licenses/MIT).
