@@ -299,7 +299,7 @@ label.setPixmap(QtGui.QPixmap(":/resources/模型设置.png"))
 
 ## QListWidget
 
-![image-20220505123808092](/YoferVuePressHome/funtions/image-20220505123808092.png)
+![image-20220505123808092](/YoferVuePressHome/functions/image-20220505123808092.png)
 
 ### item可拖拽调整顺序、删除、双击弹出二级菜单、右键移动控件
 
@@ -671,7 +671,7 @@ def setColor(self):
 
 ### 添加包含控件的行&设置控件居中
 
-![image-20220425124135720](/YoferVuePressHome/funtions/image-20220425124135720.png)
+![image-20220425124135720](/YoferVuePressHome/functions/image-20220425124135720.png)
 
 ```python
 def addRow(self, rowData: list):
@@ -746,7 +746,7 @@ def deleteRow(self, btn: QPushButton):
 - 先创建一个QListWidgetItem添加到QListWidget中，通过setSizeHint设置QListWidgetItem的尺寸，防止自定义的Widget加入后显示不全
 - 创建自定义的widget，通过self.ui.listWidget.setItemWidget(item, widget)替换原来的item
 
-- ![image-20220427181256355](/YoferVuePressHome/funtions/image-20220427181256355.png)
+- ![image-20220427181256355](/YoferVuePressHome/functions/image-20220427181256355.png)
 
 ```python
 from PyQt5.QtWidgets import *

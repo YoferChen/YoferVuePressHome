@@ -80,6 +80,17 @@ function genBlogSidebarConfig () {
         '/blog/SystemMaintenance/Windows',
         '/blog/SystemMaintenance/Termux',
       ]
+    },    
+    {
+      title: '资源集合',
+      path: '/blog/Resources/',
+      collapsable: false,
+      children: [
+        '/blog/Resources/',
+        '/blog/Resources/Software',
+        '/blog/Resources/Study',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
     },
     // {
     //   title: '论文笔记',
