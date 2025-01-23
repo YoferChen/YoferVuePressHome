@@ -19,7 +19,8 @@ module.exports = {
     ],
     sidebar: {
       '/guide/': genSidebarConfig('Guide'),
-      '/blog/': genBlogSidebarConfig()
+      '/blog/': genBlogSidebarConfig(),
+      '/daily/': genDailySidebarConfig()
     },
     lastUpdated: 'Last Updated'
   },
@@ -47,6 +48,7 @@ function genSidebarConfig (title) {
     }
   ]
 }
+
 
 function genBlogSidebarConfig () {
   return [
@@ -103,3 +105,36 @@ function genBlogSidebarConfig () {
   ]
 }
 
+
+function genDailySidebarConfig () {
+  return [
+    {
+      title: '记录生活',
+      path: '/daily/',
+      collapsable: true,
+      children: [
+        '',
+      ]
+    },
+    {
+      title: '电影墙',
+      path: '/daily/movie/',
+      collapsable: true,
+      children: [
+        '/daily/movie/',
+        '/daily/movie/2024',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
+    },
+    {
+      title: '照片墙',
+      path: '/daily/photo/',
+      collapsable: true,
+      children: [
+        '/daily/photo/',
+        '/daily/photo/2024',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
+    },
+  ]
+}
