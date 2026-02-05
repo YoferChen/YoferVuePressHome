@@ -66,11 +66,6 @@ function genBlogSidebarConfig () {
       collapsable: false,
       children: [
         '/blog/OpenClawGuide/',
-        '/blog/OpenClawGuide/installation',
-        '/blog/OpenClawGuide/quick-start',
-        '/blog/OpenClawGuide/core-features',
-        '/blog/OpenClawGuide/advanced-configuration',
-        '/blog/OpenClawGuide/best-practices',
       ],
       sidebarDepth: 3  //左侧导航展开级数
     },
