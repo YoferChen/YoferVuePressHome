@@ -61,6 +61,20 @@ function genBlogSidebarConfig () {
       ]
     },
     {
+      title: 'OpenClaw AI Agent',
+      path: '/blog/OpenClawGuide/',
+      collapsable: false,
+      children: [
+        '/blog/OpenClawGuide/',
+        '/blog/OpenClawGuide/installation',
+        '/blog/OpenClawGuide/quick-start',
+        '/blog/OpenClawGuide/core-features',
+        '/blog/OpenClawGuide/advanced-configuration',
+        '/blog/OpenClawGuide/best-practices',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
+    },
+    {
       title: 'PyQt5',
       path: '/blog/PyqtLearning/',
       collapsable: false,
