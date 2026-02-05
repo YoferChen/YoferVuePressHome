@@ -6,6 +6,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+      with:
+        fetch-depth: 0 # 必加：VuePress last-updated 插件需要完整Git提交记录
 
     - name: Build and Deploy
       uses: jenkey2011/vuepress-deploy@master
@@ -13,5 +15,6 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: YoferChen/YoferVuePressHome
         TARGET_BRANCH: blog-pages
-        BUILD_SCRIPT: yarn && yarn build
+        # 核心修改：用export设置兼容参数，直接执行构建命令，跳过项目package.json的无效脚本
+        BUILD_SCRIPT: yarn && export NODE_OPTIONS=--openssl-legacy-provider && yarn vuepress build docs
         BUILD_DIR: dist/
