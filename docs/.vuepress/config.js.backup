@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Yofer's Home",
+  title: "Yofer\'s Home",
   description: "This is a vuepress website of YoferChen",
   // base: "/yofervuepresshome/",
   base: "/YoferVuePressHome/",
@@ -57,68 +57,84 @@ function genBlogSidebarConfig () {
       path: '/blog/',
       collapsable: true,
       children: [
-        ''
+        '',
       ]
     },
     {
-      title: 'AI技术',
-      collapsable: true,
+      title: 'PyQt5',
+      path: '/blog/PyqtLearning/',
+      collapsable: false,
       children: [
-        'AI_Technology',
-        'AI_Technology/OpenClawGuide'
-      ]
+        '/blog/PyqtLearning/',
+        '/blog/PyqtLearning/pyQt万能功能模板',
+        '/blog/PyqtLearning/QSS万能样式模板',
+        '/blog/PyqtLearning/QT美化之QSS笔记',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
     },
     {
-      title: 'Pyqt学习',
-      collapsable: true,
+      title: '系统维护手册',
+      path: '/blog/SystemMaintenance/',
+      collapsable: false,
       children: [
-        'PyqtLearning',
-        'PyqtLearning/README'
+        '/blog/SystemMaintenance/',
+        '/blog/SystemMaintenance/Linux',
+        '/blog/SystemMaintenance/Windows',
+        '/blog/SystemMaintenance/Termux',
       ]
-    },
+    },    
     {
-      title: 'Paper笔记',
-      collapsable: true,
+      title: '资源集合',
+      path: '/blog/Resources/',
+      collapsable: false,
       children: [
-        'PaperNotes',
-        'PaperNotes/README'
-      ]
+        '/blog/Resources/',
+        '/blog/Resources/Software',
+        '/blog/Resources/Study',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
     },
-    {
-      title: '资源',
-      collapsable: true,
-      children: [
-        'Resources',
-        'Resources/README'
-      ]
-    },
-    {
-      title: '系统维护',
-      collapsable: true,
-      children: [
-        'SystemMaintenance',
-        'SystemMaintenance/README'
-      ]
-    }
+    // {
+    //   title: '论文笔记',
+    //   path: '/blog/PaperNotes/',
+    //   collapsable: true,
+    //   children: [
+    //     '/blog/PaperNotes/',
+    //   ]
+    // },
   ]
 }
+
 
 function genDailySidebarConfig () {
   return [
     {
-      title: '日记',
+      title: '记录生活',
       path: '/daily/',
-      collapsable: true
+      collapsable: true,
+      children: [
+        '',
+      ]
     },
     {
-      title: '相册',
+      title: '电影墙',
+      path: '/daily/movie/',
+      collapsable: true,
+      children: [
+        '/daily/movie/',
+        '/daily/movie/2024',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
+    },
+    {
+      title: '照片墙',
       path: '/daily/photo/',
-      collapsable: true
+      collapsable: true,
+      children: [
+        '/daily/photo/',
+        '/daily/photo/2024',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
     },
-    {
-      title: '相册 2024',
-      path: '/daily/photo/2024.html',
-      collapsable: true
-    }
   ]
 }
