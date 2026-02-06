@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Yofer\'s Home",
+  title: "Yofer's Home",
   description: "This is a vuepress website of YoferChen",
   // base: "/yofervuepresshome/",
   base: "/YoferVuePressHome/",
@@ -61,11 +61,11 @@ function genBlogSidebarConfig () {
       ]
     },
     {
-      title: 'OpenClaw AI Agent',
-      path: '/blog/OpenClawGuide/',
+      title: 'AI技术',
+      path: '/blog/AI技术',
       collapsable: false,
       children: [
-        '/blog/OpenClawGuide/',
+        '/blog/AI技术',
       ],
       sidebarDepth: 3  //左侧导航展开级数
     },
@@ -91,7 +91,7 @@ function genBlogSidebarConfig () {
         '/blog/SystemMaintenance/Windows',
         '/blog/SystemMaintenance/Termux',
       ]
-    },    
+    },
     {
       title: '资源集合',
       path: '/blog/Resources/',
