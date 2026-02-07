@@ -61,6 +61,16 @@ function genBlogSidebarConfig () {
       ]
     },
     {
+      title: 'AI World',
+      path: '/blog/AILearning/',
+      collapsable: false,
+      children: [
+        '/blog/AILearning/',
+        '/blog/AILearning/OpenClawGuide',
+      ],
+      sidebarDepth: 3  //左侧导航展开级数
+    },
+    {
       title: 'PyQt5',
       path: '/blog/PyqtLearning/',
       collapsable: false,
