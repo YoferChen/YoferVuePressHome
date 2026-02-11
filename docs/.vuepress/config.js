@@ -1,124 +1,32 @@
 module.exports = {
-  title: "Yofer's Home",
-  description: "This is a vuepress website of YoferChen",
-  // base: "/yofervuepresshome/",
-  base: "/YoferVuePressHome/",
-  head: [["link", { rel: "icon", href: `/yofer_favicon.ico` }]],
-  dest: "./dist",
-
+  base: '/YoferVuePressHome/',
+  title: 'Yofer\'s Blog',
+  description: 'Yofer\'s personal blog and notes',
   themeConfig: {
-    search: false,
     nav: [
-      { text: "Home", link: "/" },
-      { text: "About", link: "/about/" },
-      { text: "Projects", link: "/projects/" },
-      { text: "Experiences", link: "/experiences/" },
-      { text: "Blog", link: "/blog/" },
-      { text: "Guide", link: "/guide/" },
-      { text: "GitHub", link: "https://github.com/YoferChen" }
+      { text: 'Home', link: '/' },
+      { text: 'Blog', link: '/blog/' },
     ],
     sidebar: {
-      '/guide/': genSidebarConfig('Guide'),
       '/blog/': genBlogSidebarConfig(),
-      '/daily/': genDailySidebarConfig()
-    },
-    lastUpdated: 'Last Updated'
+    }
   },
-
-  markdown: {
-    // options for markdown-it-anchor
-    anchor: { permalink: false },
-    extendMarkdown: md => {
-      md.use(require("markdown-it-katex"));
-    }
-  }
-};
-
-function genSidebarConfig (title) {
-  return [
-    {
-      title,
-      collapsable: false,
-      children: [
-        '',
-        'getting-started',
-        'customize',
-        'advanced',
-      ]
-    }
+  plugins: [
+    '@vuepress/back-to-top',
   ]
-}
-
+};
 
 function genBlogSidebarConfig () {
   return [
     {
-      title: '介绍',
+      title: '博客首页',
       path: '/blog/',
-      collapsable: true,
+      collapsable: false,
       children: [
-        ''
-      ]
-    },
-    {
-      title: 'AI技术',
-      collapsable: true,
-      children: [
-        'AI_Technology',
-        'AI_Technology/OpenClawGuide'
-      ]
-    },
-    {
-      title: 'Pyqt学习',
-      collapsable: true,
-      children: [
-        'PyqtLearning',
-        'PyqtLearning/README'
-      ]
-    },
-    {
-      title: 'Paper笔记',
-      collapsable: true,
-      children: [
-        'PaperNotes',
-        'PaperNotes/README'
-      ]
-    },
-    {
-      title: '资源',
-      collapsable: true,
-      children: [
-        'Resources',
-        'Resources/README'
-      ]
-    },
-    {
-      title: '系统维护',
-      collapsable: true,
-      children: [
-        'SystemMaintenance',
-        'SystemMaintenance/README'
-      ]
+        '/blog/',
+        '/blog/OpenClawInstallationAndFeishuIntegration'
+      ],
+      sidebarDepth: 3
     }
-  ]
-}
-
-function genDailySidebarConfig () {
-  return [
-    {
-      title: '日记',
-      path: '/daily/',
-      collapsable: true
-    },
-    {
-      title: '相册',
-      path: '/daily/photo/',
-      collapsable: true
-    },
-    {
-      title: '相册 2024',
-      path: '/daily/photo/2024.html',
-      collapsable: true
-    }
-  ]
+  ];
 }
