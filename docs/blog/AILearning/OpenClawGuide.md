@@ -7,109 +7,20 @@ OpenClaw 是一个开源的 AI 主动智能体，连接 AI 模型与本地文件
 **前身项目**：
 - MoltBot → Clawdbot → OpenClaw（因 Claude 名称限制而改名为 OpenClaw）
 
-**核心特性**：
-- 🔗 多平台消息集成
-- 🧠 本地持久化记忆
-- 🛠️ 专业技能扩展
-- 📦 Docker 隔离运行
+### 核心特性
+- 🔗 多平台消息集成（Telegram, WhatsApp, Discord, 微信）
+- 🧠 本地持久化记忆（任务、笔记、偏好设置）
+- 🛠️ 专业技能扩展（浏览器自动化、文件操作、命令执行）
+- 📦 Docker 隔离运行（安全沙箱环境）
 - 🚀 支持自定义技能开发
 
----
-
-## 📊 系统架构概览
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     OpenClaw 核心                              │
-│  ┌─────────────────────────────────────────────────────────┐ │
-│  │          AI Agent (Nova & Sub-Agents)                   │ │
-│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │ │
-│  │  │  主代理       │  │  子代理 1    │  │  子代理 N    │  │ │
-│  │  │  (Nova)      │  │  (专用)      │  │  (专用)      │  │ │
-│  │  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘  │ │
-│  └─────────┼─────────────────┼─────────────────┼──────────┘ │
-│            │                 │                 │            │
-│  ┌─────────▼─────────┐ ┌─────▼─────┐ ┌────────▼──────────┐ │
-│  │  技能系统 (Skills) │ │  记忆系统  │ │  消息网关 (Gateway) │ │
-│  │  - 浏览器自动化    │ │  - MEMORY │ │  - WhatsApp      │ │
-│  │  - 文件操作        │ │  - 脑图   │ │  - Telegram      │ │
-│  │  - Shell 命令      │ │  - 笔记   │ │  - Discord       │ │
-│  │  - 多 Agent 管理    │ │  - 待办   │ │  - 微信          │ │
-│  └─────────┬─────────┘ └─────┬─────┘ └────────┬──────────┘ │
-└────────────┼─────────────────┼────────────────┼─────────────┘
-             │                 │                │
-    ┌────────▼─────────────────▼────────────────▼─────┐
-    │            Docker 隔离沙箱环境                     │
-    │  - openclaw-sandbox:bookworm-slim                 │
-    │  - seccomp + AppArmor 安全保护                    │
-    │  - 限制文件读写、命令执行                          │
-    │  - 1 CPU, 1GB RAM, 2GB Swap                      │
-    └──────────────────────────────────────────────────┘
-             │
-    ┌────────▼──────────────────────────────────┐
-    │            本地文件系统                      │
-    │  ~/.openclaw/workspace/                    │
-    │  - 配置文件                                │
-    │  - 记忆数据                                │
-    │  - 日志文件                                │
-    └────────────────────────────────────────────┘
-```
-
----
-
-## 🛠️ 核心功能详解
-
-### 1️⃣ 消息平台集成
-
-**支持的渠道**：
-| 平台 | 用途 | 备注 |
-|------|------|------|
-| WhatsApp | 个人助理 | 支持自动回复 |
-| Telegram | 实时通信 | 支持机器人集成 |
-| Discord | 社区互动 | 支持多频道管理 |
-| 微信 | 中文用户 | 需要额外配置 |
-
-### 2️⃣ 智能技能系统
-
-**内置技能**：
-```yaml
-- browser: 浏览器自动化（CDP 协议）
-- file: 文件读写和编辑
-- shell: 命令执行
-- sessions: Agent 会话管理
-- cron: 定时任务
-- memory: 持久化记忆存储
-```
-
-**自定义技能示例**：
-```yaml
-name: my-custom-skill
-version: 1.0.0
-description: 一个自定义的技能
-actions:
-  - name: hello
-    description: 打招呼
-    run: node src/hello.js
-```
-
-### 3️⃣ 记忆系统
-
-**记忆类型**：
-- `MEMORY.md`: 全局记忆文件
-- `memory/`: 分类记忆目录
-  - `tasks.md`: 任务列表
-  - `notes.md`: 笔记
-  - `people.md`: 人脉记录
-  - `preferences.md`: 偏好设置
-
-### 4️⃣ 多 Agent 管理
-
-**主代理**：Nova - 负责协调和决策
-
-**子代理**：
-- 专业任务执行
-- 并行处理能力
-- 可独立配置模型
+### 能帮你做什么？
+- 📝 创建和管理待办事项
+- 📊 分析数据和信息
+- 📧 自动回复消息
+- 🔍 进行网络搜索
+- 🤖 管理多个 AI Agent
+- 🛠️ 自动化开发任务
 
 ---
 
@@ -162,6 +73,15 @@ npm install
 
 # 启动 OpenClaw
 npm run dev
+```
+
+### 验证安装
+```bash
+# 检查 OpenClaw 版本
+openclaw version
+
+# 查看运行状态
+openclaw status
 ```
 
 ---
@@ -294,6 +214,33 @@ openclaw skills create my-skill
 
 ---
 
+## 🚀 快速开始示例
+
+### 示例 1：个人助理
+
+```bash
+# 1. 在 Telegram 中添加你的 OpenClaw Bot
+# 2. 发送消息：帮我创建一个待办事项列表
+# 3. Agent 会自动创建并保存待办事项到本地记忆
+```
+
+### 示例 2：开发助手
+
+```bash
+# 1. 配置好代码仓库的 GitHub 访问令牌
+# 2. 发送消息：帮我分析这个项目的代码结构
+# 3. Agent 会分析代码并生成报告
+```
+
+### 示例 3：自动化任务
+
+```bash
+# 1. 设置定时任务
+# 2. Agent 会自动执行任务
+```
+
+---
+
 ## 🎯 典型应用场景
 
 ### 1. 个人助理
@@ -322,64 +269,46 @@ openclaw skills create my-skill
 
 ---
 
-## 🔌 第三方集成
+## 🛠️ 高级配置
 
-### You.com 集成
-```bash
-# 安装 You.com 技能
-bunx @youdotcom-oss/api@latest search --json '{"query":"AI agent frameworks"}' --client OpenClaw
-
-# 在技能中调用
-npx skills add youdotcom-oss/agent-skills --skill youdotcom-cli
+### Docker 沙箱配置
+```yaml
+sandbox:
+  docker:
+    readOnlyRoot: true
+    network: "none"
+    user: "1000:1000"
+    memory: "1g"
+    memorySwap: "2g"
+    capDrop: ["ALL"]
+    pidsLimit: 256
 ```
 
-### 开发自定义 API
-```typescript
-// skill.ts
-import { Tool } from '@openclaw/core';
+### 多 Agent 协作
 
-export class MyCustomTool implements Tool {
-  async execute(input: any) {
-    // 实现自定义逻辑
-    return { result: 'success' };
-  }
-}
+```yaml
+models:
+  main:
+    provider: "openai"
+    model: "gpt-4.1"
+
+  subagents:
+    - provider: "anthropic"
+      model: "claude-3.5"
+      capacity: 3
+      tasks:
+        - code_review
+        - testing
+        - documentation
 ```
 
 ---
 
-## 📖 最佳实践
+## ❓ 常见问题
 
-### 1. 安全性
-- ✅ 始终使用 Docker 隔离运行
-- ✅ 限制 Agent 权限
-- ✅ 定期更新系统和依赖
-- ✅ 使用最小权限原则
+### Q1: 如何安装 OpenClaw？
 
-### 2. 性能优化
-- ✅ 合理设置内存和 CPU 限制
-- ✅ 使用合适的 AI 模型
-- ✅ 优化记忆存储策略
-- ✅ 定期清理日志
-
-### 3. 可维护性
-- ✅ 版本控制技能配置
-- ✅ 使用环境变量管理敏感信息
-- ✅ 记录 Agent 行为日志
-- ✅ 建立备份机制
-
----
-
-## 🐛 常见问题
-
-### Q1: Node.js 版本不兼容
-**问题**：安装失败，提示 Node.js 版本过低
-**解决**：
-```bash
-# 升级到 Node.js 22+
-nvm install 22
-nvm use 22
-```
+参考"安装步骤"章节，推荐使用官方安装脚本。
 
 ### Q2: Docker 容器启动失败
 **问题**：Docker 无法启动容器

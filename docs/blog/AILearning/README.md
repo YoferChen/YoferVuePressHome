@@ -13,7 +13,8 @@
 ## 📖 目录
 
 ### AI Agent 工具
-- [OpenClaw AI Agent 完全指南](./OpenClawGuide.md) - OpenClaw AI Agent 的完整使用指南，包含安装、配置、功能介绍和最佳实践 `[2026-02-07]`
+- [OpenClaw AI Agent 完全指南](./OpenClawGuide.md) - OpenClaw AI Agent 的完整使用指南，包含安装、配置、功能介绍和最佳实践 `[2026-02-13]`
+- [OpenClaw 安装与飞书集成指南](./OpenClawFeishuGuide.md) - OpenClaw 的安装步骤以及如何将其与飞书进行集成 `[2026-02-13]`
 
 ---
 
