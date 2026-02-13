@@ -30,7 +30,6 @@ function genBlogSidebarConfig () {
       collapsable: false,
       children: [
         '', // This was in remote, I'll keep it for the root of the blog section
-        '/blog/OpenClawInstallationAndFeishuIntegration', // My new article
       ]
     },
     // Remote's existing blog categories
@@ -41,6 +40,7 @@ function genBlogSidebarConfig () {
       children: [
         '/blog/AILearning/',
         '/blog/AILearning/OpenClawGuide',
+        '/blog/AILearning/OpenClawFeishuGuide',
       ],
       sidebarDepth: 3
     },
